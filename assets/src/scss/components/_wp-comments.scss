@@ -1,0 +1,165 @@
+*
+ * Comments
+ * -----------------------------------------------------------------------------
+ */
+#comments {
+	padding: 40px 0 0 0;
+
+	h3.comment-title {
+		font-size: 24px;
+		font-weight: bold;
+		margin: 0 0 15px 0;
+		}
+
+	ol.commentlist {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		}
+
+	article.comment {
+		border-top: 1px dashed #ccc;
+		padding: 30px 0;
+		}
+
+		.comment-author {
+			overflow: hidden;
+			margin: 0 0 10px 0;
+
+			.avatar {
+				background: none repeat scroll 0 0 #fff;
+				border: 3px solid #d6d6d6;
+				border-radius: 60px;
+				height: 60px;
+				position: relative;
+				width: 60px;
+				float: left;
+				
+				img {
+					border: medium none;
+					border-radius: 38px;
+					height: 50px;
+					left: 2px;
+					position: absolute;
+					top: 2px;
+					width: 50px;
+					}
+				}
+			.fn {
+				float: left;
+				margin: 6px 0 0 15px;
+				font-size: 16px;
+				
+				.comment-meta {
+					font-size: 12px;
+					text-transform: uppercase;
+
+					a {
+						color: #5c5c5c;
+						}
+					}
+				}
+
+			}
+		.comment-body {
+			clear: both;
+			}
+
+
+	}
+
+#nocomments {
+	background: none repeat scroll 0 0 #e9e9e9;
+	border-top: 1px solid #e4e4e4;
+	padding: 30px 0;
+	margin: 40px 0 1px 0;
+	
+	h4 {
+		font-size: 16px;
+		font-weight: normal;
+		color: #000;
+		}
+	}
+
+#form {
+	background: none repeat scroll 0 0 #e9e9e9;
+	border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	padding: 30px 0;
+
+	.form-submit {
+		display: none;
+		}
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url {
+		width: 50%;
+		}
+	
+	#reply-title {
+		font-size: 24px;
+		font-weight: bold;
+		margin: 0 0 15px 0;
+		overflow: hidden;
+
+		small {
+			float: right;
+			font-size: 14px;
+			margin: 10px 0 0 0;
+			}
+
+		}
+		p.comment-notes {
+			margin: 0 0 20px 0;
+			}
+
+		p.form-allowed-tags {
+			display: none;
+			}
+
+		span.required {
+			color: red;
+			}
+
+		input[type="text"] {
+			min-width: 300px;
+			}
+
+		input[type="text"],
+		textarea {
+			border: 1px solid #b7b7b7;
+			}
+
+		input[type="text"]:focus,
+		textarea:focus {
+			border: 1px solid #a1d9f0;
+			}
+
+		input[type="submit"] {
+			min-width: 140px;
+			}
+
+		p.form-submit {
+			margin: 0 0 20px 0;
+			}
+
+		p#mc4wp-checkbox {
+			position: relative;
+			float: left;
+
+			label {
+				display: block;
+				width: 400px;
+				padding: 0 0 0 30px;
+				}
+
+			.icheckbox_flat, .iradio_flat {
+				// background-image: url("img/check_flat/default.png") !important;
+				position: absolute;
+				top: -2px;
+				left: 0;
+				}
+
+			}
+
+	}

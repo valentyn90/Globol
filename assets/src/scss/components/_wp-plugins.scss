@@ -1,0 +1,207 @@
+/**
+ * DX Out of Date Plugin
+ * -----------------------------------------------------------------------------
+ */
+.out-of-date {
+	font-size: 14px !important;
+	margin-bottom: 30px !important;
+	padding: 10px !important;
+	}
+
+
+/**
+ * SyntaxHighlighter
+ * -----------------------------------------------------------------------------
+ */
+.syntaxhighlighter {
+	font-family: $font-family-monospace;
+	margin: 0 -2.5em 2em -2.5em !important;
+	padding: 1.5em 2.5em !important;
+	width: auto !important;
+
+	table td.code .line:first-child {
+		padding-top: 10px !important;
+	}
+	table td.code .line:last-child {
+		padding-bottom: 10px !important;
+	}
+
+	code:first-child {
+		padding-left: 10px !important;
+	}
+	code:last-child {
+		padding-right: 10px !important;
+	}
+	&.nogutter table td.code .container textarea { // specificy issue
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+		padding-left: 10px !important;
+	}
+}
+
+/**
+ * Prism Highlight 
+ * https://wordpress.org/plugins/prism-highlight/
+ * -----------------------------------------------------------------------------
+ */
+pre[class*="language-"] {
+	margin: 0 -2.8em 2em !important;
+	padding: 1.5em 2.8em;
+	border-radius: 0;
+	border: 0;
+
+	code[class*="language-"] {
+		display: block;
+	}
+}
+
+/**
+ * Footnotes
+ * -----------------------------------------------------------------------------
+ */
+ol.footnotes {
+	border-top: 1px solid #ddd;
+	margin-top: 40px;
+	padding-top: 20px;
+	margin-bottom: 0;
+
+	li {
+		margin-bottom: 5px;
+		}
+	}
+
+/**
+ * Jetpack Sharedaddy
+ * -----------------------------------------------------------------------------
+ */
+.sharedaddy {
+	margin-top: 40px;
+
+	h3.sd-title {
+		@include heading-font(10pt);
+		display: block !important;
+		text-transform: uppercase;
+
+		&::before {
+			border: 0 !important;
+			}
+		}
+
+	.sd-content {
+		ul {
+			margin: 0 !important;
+			padding: 0;
+			}
+		}
+	}
+
+/**
+ * Jetpack Related
+ * -----------------------------------------------------------------------------
+ */
+#jp-relatedposts {
+	margin-top: 40px !important;
+	margin-bottom: 0 !important;
+	padding: 0 !important;
+
+	h3.jp-relatedposts-headline {
+		@include heading-font(10pt);
+		font-weight: bold !important;
+		line-height: 1.2 !important;
+		margin: 0 0 1em !important;
+		display: block !important;
+		float: none !important;
+		text-transform: uppercase;
+
+		&::before {
+			border-top: 0;
+			content: "";
+			display: block;
+			margin-bottom: 0;
+			min-width: 0;
+			width: 100%;
+			}
+		
+		em::before {
+			display: none !important;
+			}
+		}
+
+	}
+
+
+/**
+ * Custom Pagination
+ * -----------------------------------------------------------------------------
+ */
+.post-nav {
+	margin-bottom: 40px;
+
+	.pager li {
+		overflow: hidden;
+		border-top: 1px solid #dbdbdb;
+		border-bottom: 1px solid #dbdbdb;
+		border-right: 1px solid #dbdbdb;
+		display: inline-block;
+		padding-bottom: 0;
+
+		&:first-child {
+			border-left: 1px solid #dbdbdb;
+			}
+		}
+	.pager li > a {
+		border-left: 1px solid #fff;
+		border-top: 1px solid #fff;
+		background: #f9f9f9;
+		color: #111;
+		}
+
+	.pager li > a, 
+	.pager li > span {
+		border: none !important;
+		border-radius: 0 !important;
+		}
+	}
+
+
+/**
+ * Better Archives
+ * -----------------------------------------------------------------------------
+ */
+.better-archives {
+	h2 {
+		font-size: 1.5rem;
+		padding: 0 0 5px;
+		border-bottom: 1px solid #ddd;
+		}
+	h3 {
+		@include heading-font(1rem);
+		text-transform: uppercase;
+		margin-top: 20px;
+		}
+
+	.months {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+			}
+		}
+}
+
+
+/**
+ * Codepen Embed
+ * -----------------------------------------------------------------------------
+ */
+.cp_embed_iframe {
+	margin-bottom: 40px;
+	}
+
+/**
+ * Mango Buttons
+ * -----------------------------------------------------------------------------
+ */
+.mb-button {
+	margin-right: 15px;
+	}

@@ -1,0 +1,166 @@
+/*
+ * Ninja Forms
+ * -----------------------------------------------------------------------------
+ */
+
+// MESSAGES
+.ninja-forms-required-items {
+	font-size: 12px;
+	margin: 0 0 20px;
+	}
+
+.ninja-forms-error-msg {
+	border: 1px solid #ed5565;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	padding: 10px 15px;
+	color: #fff;
+	background-color: #f2838f;
+	}
+.ninja-forms-field-error p {
+	font-size: 12px !important;
+	color: #a94442;
+	}
+
+
+// The FORM
+.ninja-forms-form {
+
+	.hp-wrap {
+		display: none;
+		}
+	.field-wrap {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		clear: both;
+		display: block;
+		overflow: hidden;
+
+		&.submit-wrap {
+			margin-bottom: 0;
+			}
+		}
+	.ninja-forms-req-symbol {
+		color: #f00;
+		}
+
+	// GENERIC
+	label {
+		padding-left: 0 !important;
+		font-weight: normal !important;
+		}
+	input[type="text"],
+	textarea {
+		border: 1px solid transparent;
+		padding: 10px 15px;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+		}
+
+	input[type="text"]:focus,
+	textarea:focus {
+		border: 1px solid transparent;
+		}
+	textarea {
+		display: block;
+		width: 100%;
+		min-height: 300px !important;
+		}
+	input[type="submit"] {
+		background: #b32024 none repeat scroll 0 0;
+		border: 1px solid #c60007;
+		border-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 0;
+		min-width: 220px;
+		padding-bottom: 15px;
+		padding-top: 17px;
+		text-align: center;
+		text-transform: uppercase;
+		vertical-align: middle;
+		white-space: nowrap;
+		}
+
+
+	// Label LEFT
+	.label-left {
+		label {
+			@include make-col-span(3);
+			@include make-col;
+			margin: 12px 0 !important;
+			}
+		input.ninja-forms-field,
+		select,
+		textarea {
+			@include make-col-span(9);
+			@include make-col(0);
+			margin-left: 0 !important;
+			}
+		}
+
+	// Label ABOVE
+	.label-above {
+		label {
+			@include make-col-span(12);
+			@include make-col(0);
+			}
+		input[type="text"],
+		select,
+		textarea {
+			@include make-col-span(12);
+			@include make-col(0);
+			}
+		}
+	
+
+	// SELECT BOX
+	select.ninja-forms-field {
+		// -webkit-appearance: button;
+		// -webkit-border-radius: 2px;
+		// -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		// -webkit-padding-end: 20px;
+		// -webkit-padding-start: 2px;
+		// -webkit-user-select: none;
+		background-image: url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==");
+		background-position: 97% center;
+		background-repeat: no-repeat;
+		color: #555;
+		font-size: 15px;
+		line-height: 24px;
+		overflow: hidden;
+		padding: 10px 15px;
+		// text-overflow: ellipsis;
+		white-space: nowrap;
+
+		border: 0;
+		box-shadow: none;
+		// -moz-appearance:none;
+		text-overflow: "";
+		text-indent: 0.01px;
+		}
+
+} // end ninja-forms-form
+
+@media screen and (max-width: 48em) {
+
+	.ninja-forms-form {
+
+		// Label LEFT
+		.label-left {
+			label {
+				@include make-col-span(12);
+				}
+			input[type="text"],
+			select,
+			textarea {
+				@include make-col-span(12);
+				}
+			}
+
+		}
+}

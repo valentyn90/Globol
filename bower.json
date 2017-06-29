@@ -1,0 +1,26 @@
+{
+  "name": "care",
+  "description": "Simple bootstrap landing page.",
+  "version": "",
+  "homepage": "fb.com/itsumrat",
+  "authors": [
+    {
+      "name": "Hussain Sumrat",
+      "email": "fb.com/itsumrat"
+    }
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "font-awesome": "4.7.0",
+    "include-media": "1.4.9",
+    "select2": "^4.0.3"
+  },
+  "devDependencies": {}
+}
