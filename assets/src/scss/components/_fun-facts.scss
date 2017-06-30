@@ -1,0 +1,41 @@
+#short-para {
+	padding: 100px 0;
+	background-color: #fafaff;
+
+	h4 {
+		@include primary-font(26px);
+		color: rgb(122, 128, 130);
+  		line-height: 1.4;
+  		text-align: center;
+  		font-weight: normal;
+  		text-transform: none;
+  		margin: 0;
+
+  		span {
+  			font-weight: bold;
+  		}
+	}
+
+	p {
+		@include primary-font(24px);
+  		color: rgb(129, 146, 151);
+  		line-height: 1.5;
+  		text-align: center;
+  		margin-top: 75px;
+  		font-weight: normal;
+	}
+}
+
+
+#fun-fact {
+	padding: 63px 0;
+	background-color: #efefef;
+
+	h1 {
+		@include heading-font(52.317px);
+		color: rgb(122, 128, 130);
+		font-weight: bold;
+		line-height: 0.9;
+		margin: 0 auto;
+	}
+}

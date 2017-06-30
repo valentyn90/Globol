@@ -1,0 +1,29 @@
+#explore {
+	background-color: #fafaff;
+	padding: 100px 0;
+
+	.title {
+		text-align: center;
+
+		h1 {
+			@include heading-font(42px);
+			color: rgb(122, 128, 130);
+			line-height: 1.29;
+			margin: 0;
+		}
+	}
+	.explore-item {
+		text-align: center;
+
+		img {
+			padding: 85px 0 28px 0;
+		}
+
+		h3 {
+			@include primary-font(30px);
+			color: rgb(142, 162, 168);
+  			line-height: 1;
+  			margin: 0;
+		}
+	}
+}

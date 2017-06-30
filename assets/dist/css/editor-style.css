@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Play|Titillium+Web");
 body {
+  font-family: 'Play', sans-serif;
   font-size: 14px;
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
@@ -148,7 +150,7 @@ var {
 }
 
 table.table tr th {
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Play', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.8333;

@@ -1,12 +1,12 @@
 /*!
-Theme Name: Ultimos
-Theme URI: http://schoolmars.com
-Author: Saddam Azad 
-Author URI: http://schoolmars.com
+Theme Name: Globol You
+Theme URI: http://sparkbit.club
+Author: Hussain Sumrat 
+Author URI: http://sparkbit.club
 Version: 0.0.1
 Description: 
 Licensed Commercial 
-Copyright 2015-2015 Saddam Azad
+Copyright 2017-2018 Hussain Sumrat
 */
 
 @charset "utf-8";
@@ -23,6 +23,11 @@ Copyright 2015-2015 Saddam Azad
 @import "helpers/mixins";
 @import "helpers/functions";
 @import "helpers/helpers";
+
+// Components
+@import "components/slider";
+@import "components/explore";
+@import "components/fun-facts";
 
 // Theme
 // @import "themes/dark";
