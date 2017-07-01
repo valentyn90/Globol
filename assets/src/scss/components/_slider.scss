@@ -1,4 +1,8 @@
-.slider {
+.slider-home {
+	background: #eef2f5 url(../img/slider.png) no-repeat center center;
+  	background-size: cover;
+	height: calc(100vh - 78px);
+	width: 100%;
 	overflow: hidden;
 }
 .slider-content {
@@ -20,6 +24,7 @@
 		color: rgb(255, 255, 255);
 		line-height: 2;
 		margin: 0;
+		margin-bottom: 40px;
 		text-align: center;
 		text-shadow: 1px 1.732px 0px rgba(0, 0, 0, 0.3);
 	}
@@ -83,13 +88,13 @@
     text-align: center;
 
     a {
-    	padding: 340px;
+    	padding: 330px;
 	    border: 2px solid #fff;
 	    border-radius: 50%;
 	    color: #fff;
 
 	    i {
-	    	top: -275px;
+	    	top: -295px;
     		position: relative;
 	    }
     }

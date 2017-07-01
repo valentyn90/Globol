@@ -1,0 +1,43 @@
+#contact {
+	.title {
+		h1 {
+			@include heading-font(52.317px);
+			background-color: #efefef;
+			color: rgb(122, 128, 130);
+			font-weight: bold;
+			line-height: 0.9;
+			text-align: center;
+			padding: 68px 0;
+		}
+	}
+	p {
+		padding: 96px 0 68px 0;
+	}
+	form {
+		.form-control {
+			border-radius: 0;
+			border-style: solid;
+			border-width: 1px;
+			border-color: rgb(222, 226, 248);
+			background-color: rgb(246, 247, 255);
+			padding: 1rem 0.75rem;
+			margin-bottom: 1.8rem;
+		}
+		textarea {
+			min-height: 259px;
+		}
+		button {
+			@include primary-font(20px);
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.439;
+			border-radius: 0;
+			width: 100%;
+			border: 0;
+			background-image: -moz-linear-gradient( 0deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
+			background-image: -webkit-linear-gradient( 0deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
+			background-image: -ms-linear-gradient( 0deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
+		}
+	}
+}

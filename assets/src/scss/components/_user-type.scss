@@ -1,0 +1,38 @@
+#user-type {
+	padding: 100px 0;
+
+	.title {
+		h1 {
+			@include heading-font(42px);
+			color: rgb(122, 128, 130);
+			font-weight: bold;
+			line-height: 0.708;
+			text-align: center;
+			margin: 0;
+			margin-bottom: 100px;
+		}
+	}
+
+	.contents {
+		background: #eef2f5 url(../img/user-type.jpg) no-repeat center center;
+		height: 759px;
+		width: 100%;
+		
+
+		.business-btn,
+		.non-business-btn {
+			@include primary-font(35px);
+			color: rgb(122, 128, 130);
+  			font-weight: bold;
+  			line-height: 0.85;
+		}
+
+		.business-btn {
+			margin-left: 205px;
+		}
+		.non-business-btn {
+			float: right;
+    		margin-right: 150px;
+		}
+	}
+}
