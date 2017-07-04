@@ -11,7 +11,7 @@ Copyright 2017-2018 Hussain Sumrat
 @import url("https://fonts.googleapis.com/css?family=Play|Titillium+Web");
 .slider-home {
   width: 100%;
-  height: calc(100vh - 78px);
+  height: 100vh;
   overflow: hidden; 
   background: #eef2f5 url(../img/slider.png) no-repeat center center;
   -webkit-background-size: cover;
@@ -19,7 +19,7 @@ Copyright 2017-2018 Hussain Sumrat
 }
 
 .slider-content {
-  margin-top: 150px;
+  margin-top: 160px;
 }
 .slider-content h3 {
   margin: 0;
@@ -95,7 +95,7 @@ Copyright 2017-2018 Hussain Sumrat
 
 .down-arrow {
   position: absolute;
-  bottom: -625px;
+  bottom: -690px;
   width: 100%;
   text-align: center;
 }
@@ -239,24 +239,37 @@ Copyright 2017-2018 Hussain Sumrat
   background-color: #efefef;
 }
 #join .title h1 {
+  display: inline-block;
   padding: 57px 0;
-  margin: 0; 
+  margin: 0;
   font-family: 'Play', sans-serif;
   font-size: 52px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
   line-height: .9;
+  color: transparent;
   color: #7a8082;
   text-transform: capitalize;
+  cursor: pointer; 
+  background: -webkit-linear-gradient(90deg, #6ba2e7 0, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%);
+  background:      -o-linear-gradient(90deg, #6ba2e7 0, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%);
+  background:         linear-gradient(0deg, #6ba2e7 0, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%);
+  -webkit-background-clip: text;
 
+  -webkit-text-fill-color: transparent;
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
 }
 
+.modal#signUpModal {
+  max-width: 562px;
+  margin: 0 auto;
+}
+
 .sign-up-form {
   padding: 0 20px;
-  margin: 125px 0; 
+  margin: 0; 
   background-color: white;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 8px 0 rgba(38, 77, 194, .2);
@@ -1073,6 +1086,10 @@ table.table tr th {
   .body-container {
     padding: 0;
   }
+}
+
+.navbar-light {
+  background-color: #fff;
 }
 
 .navbar-toggler {

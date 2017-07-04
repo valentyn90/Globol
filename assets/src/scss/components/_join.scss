@@ -6,15 +6,26 @@
 		background-color: #efefef;
 
 		h1 {
+			padding: 57px 0;
+			display: inline-block;
+            background: linear-gradient(0deg,#6ba2e7 0,#5da7eb 6%,#55c3d6 14%,#55e3bb 28%,#efda8f 37%,#efd16a 46%,#f5d18e 53%,#f98680 65%,#f77c83 74%,#db84b4 83%,#bb8dd3 93%,#ae90d7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
 			@include heading-font(52px);
 			color: rgb(122, 128, 130);
 			font-weight: bold;
 			line-height: 0.9;
 			text-transform: capitalize;
-			padding: 57px 0;
 			margin: 0;
+			cursor: pointer;
 		}
 	}
+}
+
+.modal#signUpModal {
+	max-width: 562px;
+	margin: 0 auto;
 }
 
 .sign-up-form {
@@ -22,7 +33,7 @@
   	background-color: rgb(255, 255, 255);
   	box-shadow: 0px 0px 8px 0px rgba(38, 77, 194, 0.2);
   	padding: 0 20px;
-  	margin: 125px 0;
+  	margin: 0;
 
   	h3 {
   		padding: 67px 0 0 0;

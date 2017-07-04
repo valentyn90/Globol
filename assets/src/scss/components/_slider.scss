@@ -1,12 +1,12 @@
 .slider-home {
 	background: #eef2f5 url(../img/slider.png) no-repeat center center;
   	background-size: cover;
-	height: calc(100vh - 78px);
+	height: 100vh;
 	width: 100%;
 	overflow: hidden;
 }
 .slider-content {
-	margin-top: 150px;
+	margin-top: 160px;
 
 	h3 {
 		font-size: 26.206px;
@@ -83,7 +83,7 @@
 
 .down-arrow {
 	position: absolute;
-    bottom: -625px;
+    bottom: -690px;
     width: 100%;
     text-align: center;
 
