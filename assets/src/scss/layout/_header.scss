@@ -1,6 +1,13 @@
 .navbar-light {
     background-color: #fff;
 }
+.nav-item {
+	.nav-link {
+		@include primary-font(25.333px);
+		color: rgb(127, 132, 134);
+		text-transform: capitalize;
+	}
+}
 .navbar-toggler {
   	margin-top: 15px;
 }
@@ -23,3 +30,121 @@
 }
 
 
+// scrolling navbar
+.scrolling-nav {
+	display: none;
+	nav,
+	nav ul {
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
+	  padding-left: 0;
+	}
+	nav {
+	  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3);
+	  opacity: 0;
+	  transform: scale(0.3);
+	  transition: all 0.25s;
+	  background-color: #ededed;
+	}
+	nav ul li {
+	  display: table;
+	  width: 100%;
+	  height: calc(100% /4);
+	  border-bottom: 1px solid rgba(255,255,255,0.3);
+	  background: rgba(255,255,255,0.15);
+	   perspective: 0px;
+	          transform: rotateX(-90deg) scale(0.5);
+	  -webkit-transition: all 0.3s ease 0.1s;
+	  transition: all 0.3s ease 0.1s;
+	}
+	nav ul li a {
+	  display: table-cell;
+	  vertical-align: middle;
+	  text-align: center;
+	  text-decoration: none;
+	  @include primary-font(25.333px);
+	    color: rgb(127, 132, 134);
+		text-transform: capitalize;
+	}
+	nav ul li a:hover {
+	  background: rgba(255,255,255,0.1);
+	}
+	#toggle {
+	  display: none;
+	}
+	#toggle + #toggle-btn,
+	.nav-icon {
+	  position: absolute;
+	  top: 24px;
+	  right: 15px;
+	  border-radius: 3px;
+	  cursor: pointer;
+	}
+	#toggle + #toggle-btn {
+	  height: 40px;
+	  width: 40px;
+	  z-index: 1000;
+	}
+	.nav-icon,
+	.nav-icon:before,
+	.nav-icon:after {
+	  position: absolute;
+	  height: 4px;
+	  width: 40px;
+	  margin: 18px 0;
+	  z-index: 900;
+	  border-radius: 3px;
+	  background: linear-gradient(90deg,#ae90d6 10.7%,#b88dd5 13.9%,#bf8ad2 13.9%,#d087bc 15.9%,#d586b6 17.1%,#de83af 17.1%,#e381aa 20.3%,#e57fa4 20.3%,#eb809e 23.5%,#ec7e99 23.5%,#f27e91 26.2%,#f47f85 29%,#f8857e 32.2%,#f7927e 34.2%,#f6967e,#f6967e 35%,#f89a80 35%,#f8b088,#f5c78c,#f4d18d 42.2%,#f5d089 43.4%,#f2cf7d 45.8%,#f0d177 45.8%,#eed16b 48.6%,#f0d06b 49.8%,#eed883 54.9%,#f2d88b 56.1%,#f0d88e 56.9%,#ecd994 56.9%,#ddda97 58.1%,#ddda97 58.5%,#cfdd9f 58.5%,#88e3aa 60.9%,#62e5b1 62.5%,#54e1be 64.5%,#51e1be 65.3%,#56ccce 70.9%,#53c8d1 72.1%,#55bfd9 74.1%,#5aabea 77.6%,#5ba9eb 78.8%,#67a3eb 80.8%,#6ca2e8);
+	  transition: all 0.25s;
+	}
+	.nav-icon:before {
+	  content: "";
+	  margin-top: -18px;
+	}
+	.nav-icon:after {
+	  content: "";
+	  margin-top: 18px;
+	}
+	#toggle:checked ~ nav {
+	  opacity: 1;
+	  -webkit-transform: scale(0.8);
+	          transform: scale(0.8);
+	}
+	#toggle:checked ~ .nav-icon {
+	  background: rgba(255,0,0,0);
+	}
+	#toggle:checked ~ .nav-icon:before {
+	  -webkit-transform: rotate(-225deg);
+	          transform: rotate(-225deg);
+	  margin-top: 0;
+	}
+	#toggle:checked ~ .nav-icon:after {
+	  -webkit-transform: rotate(225deg);
+	          transform: rotate(225deg);
+	  margin-top: 0;
+	}
+	#toggle:checked ~ nav ul li {
+	  -webkit-transform: rotateY(0deg) scale(1);
+	          transform: rotateY(0deg) scale(1);
+	}
+}
+
+
+// scrolling
+.search-bar-scrolling {
+    position: fixed;
+    top: 2%;
+    left: 27%;
+    width: 750px;
+}
+.scrolling-nav {
+	height: 88px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #fff;
+}

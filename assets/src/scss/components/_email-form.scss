@@ -12,6 +12,10 @@
 	}
 	p {
 		padding: 96px 0 68px 0;
+		@include primary-font(22.671px);
+		color: rgb(129, 146, 151);
+		line-height: 1.384;
+		text-align: center;
 	}
 	form {
 		.form-control {

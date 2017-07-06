@@ -54,7 +54,6 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="nav-left">
             <ul class="nav navbar-nav">
                 <li class="nav-item">
@@ -76,7 +75,7 @@
                     <a class="nav-link" href="#">login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">register</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">register</a>
                 </li>
             </ul>
         </div>
@@ -99,6 +98,40 @@
             </ul>
         </div>
     </nav>
+
+    <!-- scrolling navbar -->
+    <section class="scrolling-nav">
+        <img class="logo" src="assets/dist/img/logo.png">
+        <div class="search-bar-scrolling">
+            <form class="search-bar">
+                <a href="#" class="list-icon"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+                <select class="form-control" id="select2-single-box" name="select2-single-box" data-placeholder="Products" data-tabindex="1">
+                    <option></option>
+                    <option value="1">Cloths</option>
+                    <option value="2">Shoes</option>
+                    <option value="3">Male</option>
+                    <option value="4">Female</option>
+                    <option value="5">Child</option>
+                </select>
+                <input type="search" name="search" class="form-control" placeholder="What are you looking for">
+                <select name="country" class="form-control" id="country"></select>
+                <button class="btn search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <input type="checkbox" id="toggle"/>
+        <label for="toggle" id="toggle-btn"></label>
+        <div class="nav-icon"></div>
+        <nav data-state="close">
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+        </nav>
+    </section>
+    <!-- #scrolling navbar -->
+    
     <div class="slider-home">
         <div class="container">
             <div class="row">
@@ -167,7 +200,44 @@
     </section>
 
     <section id="navigation">
-        
+        <div class="container">
+            <div class="row">
+                <div class="first-nav-row">
+                    <a href="#" style="margin-left: 158px;"><img src="assets/dist/img/nav/1.jpg"></a>
+                    <h2>What do you <span>wish to fine?</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="second-nav-row">
+                    <a href="#"><img src="assets/dist/img/nav/2.jpg"></a>
+                    <img src="assets/dist/img/nav/3.jpg">
+                    <a href="#"><img src="assets/dist/img/nav/4.jpg"></a>
+                    <a href="#"><img src="assets/dist/img/nav/5.jpg"></a>
+                    <a href="#"><img src="assets/dist/img/nav/6.jpg"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="third-nav-row">
+                    <a href="#"><img src="assets/dist/img/nav/7.jpg"></a>
+                    <a href="#"><img src="assets/dist/img/nav/8.jpg"></a>
+                    <a href="#"><img src="assets/dist/img/nav/9.jpg"></a>
+                    <a href="#"><img src="assets/dist/img/nav/10.jpg"></a>
+                    <img src="assets/dist/img/nav/3.jpg">
+                    <a href="#"><img src="assets/dist/img/nav/11.jpg"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="fourth-nav-row">
+                    <a href="#"><img src="assets/dist/img/nav/12.jpg"></a>
+                    <img src="assets/dist/img/nav/3.jpg">
+                    <a href="#"><img src="assets/dist/img/nav/13.jpg"></a>
+                    <img src="assets/dist/img/nav/3.jpg">
+                    <a href="#"><img src="assets/dist/img/nav/14.jpg"></a>
+                    <img src="assets/dist/img/nav/3.jpg">
+                    <a href="#"><img src="assets/dist/img/nav/15.jpg"></a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="short-para">
