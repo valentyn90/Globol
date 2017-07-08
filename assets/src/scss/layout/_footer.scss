@@ -8,16 +8,34 @@ footer {
         width: 100%;
         overflow: hidden;
 
+        // Below 34em (544px)
+        @include media("<sm") {
+            height: 100%;
+            background-image: none;
+        }
+
         .us-address,
         .ch-address {
             padding-top: 110px;
             color: rgb(255, 254, 254);
             @include primary-font(18px);
 
+            // Below 34em (544px)
+            @include media("<sm") {
+                font-size: 16px;
+                color: rgb(175, 175, 175);
+                padding: 40px 0;
+            }
+
             h3 {
                 @include primary-font(30px);
                 font-weight: bold;
                 line-height: 1.6;
+
+                // Below 34em (544px)
+                @include media("<sm") {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -39,6 +57,13 @@ footer {
                 width: 40px;
                 height: 40px;
 
+                // Below 34em (544px)
+                @include media("<sm") {
+                    background-image: -moz-linear-gradient( -159deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
+                    background-image: -webkit-linear-gradient( -159deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
+                    background-image: -ms-linear-gradient( -159deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
+                }
+
                 a {
                     color: #fff;
                 }
@@ -54,6 +79,11 @@ footer {
         .social-link-ch {
             float: right;
             margin-right: 110px;
+
+            // Below 34em (544px)
+            @include media("<sm") {
+                margin-right: 0;
+            }
         }
     }
 
@@ -64,5 +94,10 @@ footer {
         line-height: 4.587;
         text-align: center;
         background-color: #414141;
+
+        // Below 34em (544px)
+        @include media("<sm") {
+            line-height: 2.5;
+        }
     }
 }

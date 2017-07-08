@@ -10,6 +10,11 @@
 			color: rgb(122, 128, 130);
 			line-height: 1.29;
 			margin: 0;
+
+			// Below 34em (544px)
+			@include media("<sm") {
+				font-size: 26px;
+			}
 		}
 	}
 	.explore-item {

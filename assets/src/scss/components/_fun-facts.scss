@@ -23,6 +23,11 @@
   		text-align: center;
   		margin-top: 75px;
   		font-weight: normal;
+
+  		// Below 34em (544px)
+		@include media("<sm") {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -37,5 +42,12 @@
 		font-weight: bold;
 		line-height: 0.9;
 		margin: 0 auto;
+
+		// Below 34em (544px)
+		@include media("<sm") {
+			font-size: 31.32px;
+    		line-height: 1;
+    		text-align: center;
+		}
 	}
 }

@@ -1,12 +1,4 @@
-.slider-home {
-	background: #eef2f5 url(../img/slider.png) no-repeat center center;
-  	background-size: cover;
-	height: 100vh;
-	width: 100%;
-	overflow: hidden;
-}
 .slider-content {
-	margin-top: 160px;
 
 	h3 {
 		font-size: 26.206px;
@@ -16,6 +8,11 @@
 		margin: 0;
 		text-align: center;
 		text-shadow: 1px 1.732px 0px rgba(0, 0, 0, 0.3);
+
+		// Below 34em (544px)
+		@include media("<sm") {
+			
+		}
 	}
 	h1 {
 		font-size: 52px;
@@ -27,6 +24,12 @@
 		margin-bottom: 40px;
 		text-align: center;
 		text-shadow: 1px 1.732px 0px rgba(0, 0, 0, 0.3);
+
+		// Below 34em (544px)
+		@include media("<sm") {
+			font-size: 30px;
+			line-height: 1;
+		}
 	}
 }
 
@@ -98,4 +101,22 @@
     		position: relative;
 	    }
     }
+}
+
+
+
+video { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+div#fashion {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

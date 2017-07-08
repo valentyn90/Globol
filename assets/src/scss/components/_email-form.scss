@@ -8,6 +8,12 @@
 			line-height: 0.9;
 			text-align: center;
 			padding: 68px 0;
+
+			// Below 34em (544px)
+			@include media("<sm") {
+				font-size: 26px;
+				padding: 40px 0;
+			}
 		}
 	}
 	p {
@@ -16,6 +22,12 @@
 		color: rgb(129, 146, 151);
 		line-height: 1.384;
 		text-align: center;
+
+		// Below 34em (544px)
+		@include media("<sm") {
+			padding: 20px 0;
+			font-size: 16px;
+		}
 	}
 	form {
 		.form-control {
@@ -29,6 +41,11 @@
 		}
 		textarea {
 			min-height: 259px;
+
+			// Below 34em (544px)
+			@include media("<sm") {
+				min-height: 150px;
+			}
 		}
 		button {
 			@include primary-font(20px);

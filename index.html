@@ -45,7 +45,7 @@
     <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="assets/vendor/select2/dist/css/select2.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
-    <link rel="stylesheet" href="assets/dist/css/style.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/dist/css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -72,7 +72,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">login</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#signInModal">login</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">register</a>
@@ -122,17 +122,21 @@
         <label for="toggle" id="toggle-btn"></label>
         <div class="nav-icon"></div>
         <nav data-state="close">
-        <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
-        </ul>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
         </nav>
     </section>
     <!-- #scrolling navbar -->
-    
-    <div class="slider-home">
+
+    <video poster="assets/dist/img/slider.png" playsinline autoplay muted loop>
+        <source src="assets/dist/video/globol.mp4" type="video/mp4">
+    </video>
+
+    <div id="fashion">
         <div class="container">
             <div class="row">
                 <div class="offset-md-2 col-md-8">
@@ -161,7 +165,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
     <section id="explore">
         <div class="container">
@@ -203,7 +207,7 @@
         <div class="container">
             <div class="row">
                 <div class="first-nav-row">
-                    <a href="#" style="margin-left: 158px;"><img src="assets/dist/img/nav/1.jpg"></a>
+                    <a href="#"><img src="assets/dist/img/nav/1.jpg"></a>
                     <h2>What do you <span>wish to fine?</span></h2>
                 </div>
             </div>
@@ -302,13 +306,13 @@
                 <div class="col-md-12">
                     <form>
                         <div class="row">
-                          <div class="col-4">
+                          <div class="col-md-4 col-sm-12">
                             <input type="text" class="form-control" placeholder="First Name">
                           </div>
-                          <div class="col-4">
+                          <div class="col-md-4 col-sm-12">
                             <input type="text" class="form-control" placeholder="Last Name">
                           </div>
-                          <div class="col-4">
+                          <div class="col-md-4 col-sm-12">
                             <input type="text" class="form-control" placeholder="Email">
                           </div>
                           <div class="col-12">
@@ -329,7 +333,7 @@
         <div class="pre-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <address class="us-address">
                             <h3>Maasticht, The Netherlands</h3>
                             Mount Saint PeterMaasticht, Netherland <br>
@@ -354,7 +358,7 @@
                             </li> 
                         </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <address class="ch-address">
                             <h3>Maasticht, The Netherlands</h3>
                             Mount Saint PeterMaasticht, Netherland <br>
@@ -431,7 +435,6 @@
                     </div>
                     <section id="business-modal-slider">
                         <h1><span>Fresh</span> Design. <span>Fun</span> Features. <span>Easy</span> Management</h1>
-
                         <div class="slider">
                             <input type="radio" id="slide2" name="slide">
                             <input type="radio" id="slide3" name="slide" checked="" >
@@ -439,21 +442,20 @@
                            
                             <ul>
                                 <li>
-                                    <img src="http://www.dbeckham.cz/img/novinky/psg_oficialni_foto.jpg"/>
-                                        
+                                    <img src="assets/dist/img/slide-2.jpg"/>                                        
                                 </li>
                                 <li>
-                                    <img src="http://www.dbeckham.cz/img/novinky/psg_oficialni_foto.jpg"/>
+                                    <img src="assets/dist/img/slide-2.jpg"/>
                                 </li>
                                 
                                 <li>
-                                    <img src="http://www.dbeckham.cz/img/novinky/psg_oficialni_foto.jpg"/>
-                                        
+                                    <img src="assets/dist/img/slide-2.jpg"/>                                        
                                 </li>                            
                             </ul>
+                            
                         </div>
-
                     </section>
+
                     <section id="one-more-thing">
                         <h1>One More Thing...</h1>
                         <div class="container">
@@ -494,29 +496,26 @@
                     <section id="non-business-modal-slider">
                         <h1><span>Fresh</span> Design. <span>Fun</span> Features. <span>Fabulous</span> Discounts</h1>
                         <div class="slider">
-                            <input type="radio" id="slide2" name="slide">
-                            <input type="radio" id="slide3" name="slide" checked="" >
-                            <input type="radio" id="slide4" name="slide">
+                            <input type="radio" id="slide5" name="slide2">
+                            <input type="radio" id="slide6" name="slide2" checked="" >
+                            <input type="radio" id="slide7" name="slide2">
                            
                             <ul>
                                 <li>
-                                    <img src="http://www.dbeckham.cz/img/novinky/psg_oficialni_foto.jpg"/>
-                                        
+                                   <img src="assets/dist/img/slide-2.jpg"/>                                        
                                 </li>
                                 <li>
-                                    <img src="http://www.dbeckham.cz/img/novinky/psg_oficialni_foto.jpg"/>
-                                </li>
-                                
+                                    <img src="assets/dist/img/slide-2.jpg"/>
+                                </li>                                
                                 <li>
-                                    <img src="http://www.dbeckham.cz/img/novinky/psg_oficialni_foto.jpg"/>
-                                        
+                                    <img src="assets/dist/img/slide-2.jpg"/>                                        
                                 </li>                            
                             </ul>
                         </div>
                     </section>
                 </div>
                 <div class="modal-footer">
-                    <h1>join now</h1>
+                    <h1 data-toggle="modal" data-target="#signUpModal">join now</h1>
                 </div>
             </div>
         </div>
@@ -557,6 +556,37 @@
                             <button type="submit" class="btn btn-primary">Sign up</button>
                             <p>Already have an account? <a href="#">Login</a></p>
                             <p class="terms">By Signup into your Account you agree to our Terms and Conditions, Privacy Policy, Cookies Policy </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign in form -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="sign-in-form">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <a href="#" class="login-with-fb">
+                            <span class="icon fa fa-facebook"></span>
+                            Login with facebook
+                        </a>
+                        <div class="or"></div>
+                        <form>
+                            <div class="form-group">
+                                <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <span><i class="fa fa-key" aria-hidden="true"></i></span>
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
                         </form>
                     </div>
                 </div>

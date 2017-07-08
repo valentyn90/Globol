@@ -17,18 +17,6 @@ Copyright 2017-2018 Hussain Sumrat
           background-size: cover;
 }
 
-.slider-home {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden; 
-  background: #eef2f5 url(../img/slider.png) no-repeat center center;
-  -webkit-background-size: cover;
-          background-size: cover;
-}
-
-.slider-content {
-  margin-top: 160px;
-}
 .slider-content h3 {
   margin: 0;
   font-family: "Play";
@@ -38,6 +26,7 @@ Copyright 2017-2018 Hussain Sumrat
   text-align: center;
   text-shadow: 1px 1.732px 0 rgba(0, 0, 0, .3);
 }
+
 .slider-content h1 {
   margin: 0;
   margin-bottom: 40px;
@@ -48,6 +37,12 @@ Copyright 2017-2018 Hussain Sumrat
   text-align: center;
   text-shadow: 1px 1.732px 0 rgba(0, 0, 0, .3); 
   text-transform: capitalize;
+}
+@media (max-width: 575px) {
+  .slider-content h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
 }
 
 .flag-text {
@@ -118,6 +113,36 @@ Copyright 2017-2018 Hussain Sumrat
   top: -295px;
 }
 
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+div#fashion {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  min-height: 100vh;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #explore {
   padding: 100px 0; 
   background-color: #fafaff;
@@ -136,6 +161,11 @@ Copyright 2017-2018 Hussain Sumrat
 
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
+}
+@media (max-width: 575px) {
+  #explore .title h1 {
+    font-size: 26px;
+  }
 }
 #explore .explore-item {
   text-align: center;
@@ -180,6 +210,11 @@ Copyright 2017-2018 Hussain Sumrat
   color: #819297;
   text-align: center;
 }
+@media (max-width: 575px) {
+  #short-para p {
+    font-size: 20px;
+  }
+}
 
 #fun-fact {
   padding: 63px 0;
@@ -197,6 +232,13 @@ Copyright 2017-2018 Hussain Sumrat
 
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
+}
+@media (max-width: 575px) {
+  #fun-fact h1 {
+    font-size: 31.32px;
+    line-height: 1;
+    text-align: center;
+  }
 }
 
 #user-type {
@@ -217,6 +259,12 @@ Copyright 2017-2018 Hussain Sumrat
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
 }
+@media (max-width: 575px) {
+  #user-type .title h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
 #user-type .contents {
   width: 100%; 
   height: 759px;
@@ -231,12 +279,29 @@ Copyright 2017-2018 Hussain Sumrat
   line-height: .85; 
   color: #7a8082;
 }
+@media (max-width: 575px) {
+  #user-type .contents .business-btn,
+  #user-type .contents .non-business-btn {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
 #user-type .contents .business-btn {
   margin-left: 205px;
+}
+@media (max-width: 575px) {
+  #user-type .contents .business-btn {
+    margin-left: 0;
+  }
 }
 #user-type .contents .non-business-btn {
   float: right;
   margin-right: 150px;
+}
+@media (max-width: 575px) {
+  #user-type .contents .non-business-btn {
+    margin-right: 0;
+  }
 }
 
 #join {
@@ -269,13 +334,27 @@ Copyright 2017-2018 Hussain Sumrat
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
 }
+@media (max-width: 575px) {
+  #join .title h1 {
+    padding: 40px; 
+    font-size: 40px;
+  }
+}
 
-.modal#signUpModal {
+#signInModal .modal-dialog {
+  max-width: 97%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.modal#signUpModal,
+.modal#signInModal {
   max-width: 562px;
   margin: 0 auto;
 }
 
-.sign-up-form {
+.sign-up-form,
+.sign-in-form {
   padding: 0 20px;
   margin: 0; 
   background-color: white;
@@ -283,12 +362,14 @@ Copyright 2017-2018 Hussain Sumrat
   -webkit-box-shadow: 0 0 8px 0 rgba(38, 77, 194, .2);
           box-shadow: 0 0 8px 0 rgba(38, 77, 194, .2);
 }
-.sign-up-form h3 {
+.sign-up-form h3,
+  .sign-in-form h3 {
   padding: 67px 0 0 0;
   margin: 0;
   text-align: center;
 }
-.sign-up-form .or {
+.sign-up-form .or,
+  .sign-in-form .or {
   position: relative;
   display: block;
   width: 100%;
@@ -296,7 +377,8 @@ Copyright 2017-2018 Hussain Sumrat
   margin: 20px 0; 
   border-bottom: 1px solid #dee3e4;
 }
-.sign-up-form .or:before {
+.sign-up-form .or:before,
+    .sign-in-form .or:before {
   position: absolute;
   top: -5px;
   right: calc(50% - 20px);
@@ -308,7 +390,8 @@ Copyright 2017-2018 Hussain Sumrat
   content: 'or';
   background-color: #fff;
 }
-.sign-up-form .login-with-fb {
+.sign-up-form .login-with-fb,
+  .sign-in-form .login-with-fb {
   display: block;
   width: 100%;
   height: 40px;
@@ -319,16 +402,20 @@ Copyright 2017-2018 Hussain Sumrat
   text-align: center;
   opacity: .95;
 }
-.sign-up-form .login-with-fb:hover {
+.sign-up-form .login-with-fb:hover,
+    .sign-in-form .login-with-fb:hover {
   text-decoration: none;
 }
-.sign-up-form .login-with-fb:hover {
+.sign-up-form .login-with-fb:hover,
+  .sign-in-form .login-with-fb:hover {
   opacity: 1;
 }
-.sign-up-form .login-with-fb {
+.sign-up-form .login-with-fb,
+  .sign-in-form .login-with-fb {
   background-color: #3a589e;
 }
-.sign-up-form .login-with-fb .icon {
+.sign-up-form .login-with-fb .icon,
+  .sign-in-form .login-with-fb .icon {
   float: left;
   width: 50px;
   height: 26px;
@@ -337,10 +424,12 @@ Copyright 2017-2018 Hussain Sumrat
   font-size: 21px;
   text-align: center;
 }
-.sign-up-form form {
+.sign-up-form form,
+  .sign-in-form form {
   padding: 67px 0;
 }
-.sign-up-form form .form-group .form-control {
+.sign-up-form form .form-group .form-control,
+    .sign-in-form form .form-group .form-control {
   padding: 1rem .75rem; 
   background-color: #f6f7ff;
   border-color: #dee2f8;
@@ -348,7 +437,8 @@ Copyright 2017-2018 Hussain Sumrat
   border-width: 1px;
   border-radius: 0;
 }
-.sign-up-form form .form-group span {
+.sign-up-form form .form-group span,
+    .sign-in-form form .form-group span {
   position: absolute;
   right: 40px;
   z-index: 1; 
@@ -357,7 +447,8 @@ Copyright 2017-2018 Hussain Sumrat
   background: none;
   border: none;
 }
-.sign-up-form form button {
+.sign-up-form form button,
+    .sign-in-form form button {
   width: 100%;
   height: 60px;
   background-image: -webkit-linear-gradient(0deg, #6ba2e7 0%, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%);
@@ -365,10 +456,14 @@ Copyright 2017-2018 Hussain Sumrat
   border: 0;
   border-radius: 0;
 }
-.sign-up-form form button:hover, .sign-up-form form button:active, .sign-up-form form button:focus {
+.sign-up-form form button:hover, .sign-up-form form button:active, .sign-up-form form button:focus,
+      .sign-in-form form button:hover,
+      .sign-in-form form button:active,
+      .sign-in-form form button:focus {
   background-color: none;
 }
-.sign-up-form form p {
+.sign-up-form form p,
+    .sign-in-form form p {
   text-align: center;
 }
 
@@ -387,6 +482,12 @@ Copyright 2017-2018 Hussain Sumrat
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
 }
+@media (max-width: 575px) {
+  #contact .title h1 {
+    padding: 40px 0; 
+    font-size: 26px;
+  }
+}
 
 #contact p {
   padding: 96px 0 68px 0;
@@ -396,6 +497,12 @@ Copyright 2017-2018 Hussain Sumrat
   line-height: 1.384;
   color: #819297;
   text-align: center;
+}
+@media (max-width: 575px) {
+  #contact p {
+    padding: 20px 0;
+    font-size: 16px;
+  }
 }
 
 #contact form .form-control {
@@ -410,6 +517,11 @@ Copyright 2017-2018 Hussain Sumrat
 
 #contact form textarea {
   min-height: 259px;
+}
+@media (max-width: 575px) {
+  #contact form textarea {
+    min-height: 150px;
+  }
 }
 
 #contact form button {
@@ -449,6 +561,11 @@ Copyright 2017-2018 Hussain Sumrat
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
 }
+@media (max-width: 575px) {
+  .modal-title {
+    font-size: 20px;
+  }
+}
 
 .modal-body {
   padding: 0;
@@ -460,6 +577,11 @@ Copyright 2017-2018 Hussain Sumrat
   line-height: 1.385;
   color: #819297;
   text-align: center;
+}
+@media (max-width: 575px) {
+  .modal-body p {
+    font-size: 18px;
+  }
 }
 
 .modal-dialog {
@@ -489,23 +611,38 @@ Copyright 2017-2018 Hussain Sumrat
   color: #8ea2a8;
 }
 
-#business-modal-slider h1 span {
+.modal-footer {
+  background-color: #efefef; 
+  border-top: 0;
+}
+.modal-footer h1 {
+  display: inline-block;
+  padding: 57px 0;
+  margin: 0 auto;
+  font-family: 'Play', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  font-weight: bold;
+  line-height: 1.8333;
+  line-height: 1;
+  color: transparent;
+  color: #7a8082;
+  text-transform: capitalize;
+  cursor: pointer; 
   background: -webkit-linear-gradient(0deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
   background:      -o-linear-gradient(0deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
   background:         linear-gradient(90deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
 }
 
-#business-modal-slider,
-#non-business-modal-slider {
+#business-modal-slider {
   height: 100vh;
-  /*2*/
-  /*1*/
-  /*3*/
-  /*4*/
-  /*5*/
 }
-#business-modal-slider h1,
-  #non-business-modal-slider h1 {
+#business-modal-slider h1 {
   padding: 65px 0; 
   font-family: 'Play', sans-serif;
   font-size: 47px;
@@ -520,23 +657,57 @@ Copyright 2017-2018 Hussain Sumrat
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
 }
-#business-modal-slider .slider,
-  #non-business-modal-slider .slider {
+@media (max-width: 575px) {
+  #business-modal-slider h1 {
+    font-size: 28px;
+  }
+}
+#business-modal-slider h1 span {
+  display: inline-block;
+  margin: 0;
+  font-family: 'Play', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  font-weight: bold;
+  line-height: 1.8333;
+  line-height: .9;
+  color: transparent;
+  color: #7a8082;
+  text-transform: capitalize;
+  cursor: pointer; 
+  background: -webkit-linear-gradient(0deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  background:      -o-linear-gradient(0deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  background:         linear-gradient(90deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+@media (max-width: 575px) {
+  #business-modal-slider h1 span {
+    font-size: 30px;
+  }
+}
+#business-modal-slider .slider {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   width: 24em; 
   height: 15em;
   margin: -7.5em -12em;
   text-align: center;
 }
-#business-modal-slider .slider input,
-  #non-business-modal-slider .slider input {
+@media (max-width: 575px) {
+  #business-modal-slider .slider {
+    top: 60%;
+  }
+}
+#business-modal-slider .slider input {
   position: relative;
   top: -1.5em;
 }
-#business-modal-slider input[type='radio'],
-  #non-business-modal-slider input[type='radio'] {
+#business-modal-slider input[type='radio'] {
   width: 15px;
   height: 15px;
   -webkit-appearance: none;
@@ -547,8 +718,7 @@ Copyright 2017-2018 Hussain Sumrat
      -moz-appearance: none;
           appearance: none;
 }
-#business-modal-slider input[type='radio']:checked,
-  #non-business-modal-slider input[type='radio']:checked {
+#business-modal-slider input[type='radio']:checked {
   width: 15px;
   height: 15px;
   -webkit-appearance: none;
@@ -559,8 +729,7 @@ Copyright 2017-2018 Hussain Sumrat
      -moz-appearance: none;
           appearance: none;
 }
-#business-modal-slider .slider ul,
-  #non-business-modal-slider .slider ul {
+#business-modal-slider .slider ul {
   position: relative;
   width: 24em;
   height: 15em;
@@ -570,8 +739,7 @@ Copyright 2017-2018 Hussain Sumrat
 
   -webkit-transform-style: preserve-3d;
 }
-#business-modal-slider .slider ul li,
-  #non-business-modal-slider .slider ul li {
+#business-modal-slider .slider ul li {
   position: absolute;
   top: 0;
   left: 0;
@@ -580,97 +748,154 @@ Copyright 2017-2018 Hussain Sumrat
 
   -webkit-transform-style: preserve-3d;
 }
-#business-modal-slider .slider ul li:nth-child(3),
-  #non-business-modal-slider .slider ul li:nth-child(3) {
+#business-modal-slider .slider ul li:nth-child(3) {
   -webkit-transition: 1s ease-in-out;
   -webkit-transform: perspective(1000);
 }
-#business-modal-slider .slider img,
-  #non-business-modal-slider .slider img {
-  width: 300px;
-  height: 400px;
+#business-modal-slider .slider img {
+  width: 390px;
+  height: 390px;
   vertical-align: top;
+  border-radius: 4px; 
+  -webkit-transform: perspective(1000);
+}
+@media (max-width: 575px) {
+  #business-modal-slider .slider img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+#non-business-modal-slider {
+  height: 100vh;
+}
+#non-business-modal-slider h1 {
+  padding: 65px 0; 
+  font-family: 'Play', sans-serif;
+  font-size: 47px;
+  font-weight: 600;
+  font-weight: bold;
+  line-height: 1.8333;
+  line-height: 1;
+  color: #7a8082;
+  text-align: center;
+  background-color: #efefef;
+
+  -webkit-font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+@media (max-width: 575px) {
+  #non-business-modal-slider h1 {
+    font-size: 28px;
+  }
+}
+#non-business-modal-slider h1 span {
+  display: inline-block;
+  margin: 0;
+  font-family: 'Play', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  font-weight: bold;
+  line-height: 1.8333;
+  line-height: .9;
+  color: transparent;
+  color: #7a8082;
+  text-transform: capitalize;
+  cursor: pointer; 
+  background: -webkit-linear-gradient(0deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  background:      -o-linear-gradient(0deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  background:         linear-gradient(90deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+@media (max-width: 575px) {
+  #non-business-modal-slider h1 span {
+    font-size: 30px;
+  }
+}
+#non-business-modal-slider .slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24em; 
+  height: 15em;
+  margin: -7.5em -12em;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  #non-business-modal-slider .slider {
+    top: 60%;
+  }
+}
+#non-business-modal-slider .slider input {
+  position: relative;
+  top: -1.5em;
+}
+#non-business-modal-slider input[type='radio'] {
+  width: 15px;
+  height: 15px;
+  -webkit-appearance: none;
+  cursor: pointer; 
+  background: #ccc;
   border-radius: 8px;
+
+     -moz-appearance: none;
+          appearance: none;
+}
+#non-business-modal-slider input[type='radio']:checked {
+  width: 15px;
+  height: 15px;
+  -webkit-appearance: none;
+  background: #666;
+  border: 4px solid #ccc;
+  border-radius: 8px; 
+
+     -moz-appearance: none;
+          appearance: none;
+}
+#non-business-modal-slider .slider ul {
+  position: relative;
+  width: 24em;
+  height: 15em;
+  list-style: none;
+  -webkit-transition: 1s; 
   -webkit-transform: perspective(1000);
 
-  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, .4)));
+  -webkit-transform-style: preserve-3d;
 }
-#business-modal-slider #slide2:checked ~ ul li:nth-child(1),
-  #non-business-modal-slider #slide2:checked ~ ul li:nth-child(1) {
-  -webkit-transition: .5s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
+#non-business-modal-slider .slider ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  -webkit-transform-origin: center;
+
+  -webkit-transform-style: preserve-3d;
 }
-#business-modal-slider #slide3:checked ~ ul li:nth-child(1),
-  #non-business-modal-slider #slide3:checked ~ ul li:nth-child(1) {
-  -webkit-transition: 1s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(0deg);
+#non-business-modal-slider .slider ul li:nth-child(3) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000);
 }
-#business-modal-slider #slide4:checked ~ ul li:nth-child(1),
-  #non-business-modal-slider #slide4:checked ~ ul li:nth-child(1) {
-  -webkit-transition: .5s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(40deg) translateZ(-20em) translateX(-10em);
+#non-business-modal-slider .slider img {
+  width: 390px;
+  height: 390px;
+  vertical-align: top;
+  border-radius: 4px; 
+  -webkit-transform: perspective(1000);
 }
-#business-modal-slider #slide2:checked ~ ul li:nth-child(2),
-  #non-business-modal-slider #slide2:checked ~ ul li:nth-child(2) {
-  -webkit-transition: 1s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(0deg);
-}
-#business-modal-slider #slide3:checked ~ ul li:nth-child(2),
-  #non-business-modal-slider #slide3:checked ~ ul li:nth-child(2) {
-  -webkit-transition: .5s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(40deg) translateZ(-20em) translateX(-10em);
-}
-#business-modal-slider #slide4:checked ~ ul li:nth-child(2),
-  #non-business-modal-slider #slide4:checked ~ ul li:nth-child(2) {
-  -webkit-transition: .4s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(40deg) translateZ(-40em) translateX(-20em);
-}
-#business-modal-slider #slide2:checked ~ ul li:nth-child(3),
-  #non-business-modal-slider #slide2:checked ~ ul li:nth-child(3) {
-  -webkit-transition: .4s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-40em) translateX(20em);
-}
-#business-modal-slider #slide3:checked ~ ul li:nth-child(3),
-  #non-business-modal-slider #slide3:checked ~ ul li:nth-child(3) {
-  -webkit-transition: .5s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
-}
-#business-modal-slider #slide4:checked ~ ul li:nth-child(4),
-  #non-business-modal-slider #slide4:checked ~ ul li:nth-child(4) {
-  -webkit-transition: 1s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(0deg);
-}
-#business-modal-slider #slide2:checked ~ ul li:nth-child(4),
-  #non-business-modal-slider #slide2:checked ~ ul li:nth-child(4) {
-  -webkit-transition: .4s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(-60deg) translateZ(-70em) translateX(5em);
-}
-#business-modal-slider #slide3:checked ~ ul li:nth-child(4),
-  #non-business-modal-slider #slide3:checked ~ ul li:nth-child(4) {
-  -webkit-transition: .5s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-40em) translateX(20em);
-}
-#business-modal-slider #slide4:checked ~ ul li:nth-child(4),
-  #non-business-modal-slider #slide4:checked ~ ul li:nth-child(4) {
-  -webkit-transition: 1s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
-}
-#business-modal-slider #slide2:checked ~ ul li:nth-child(5),
-  #non-business-modal-slider #slide2:checked ~ ul li:nth-child(5) {
-  -webkit-transition: .4s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(-60deg) translateZ(-90em) translateX(5em);
-}
-#business-modal-slider #slide3:checked ~ ul li:nth-child(5),
-  #non-business-modal-slider #slide3:checked ~ ul li:nth-child(5) {
-  -webkit-transition: .5s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-40em) translateX(20em);
-}
-#business-modal-slider #slide4:checked ~ ul li:nth-child(5),
-  #non-business-modal-slider #slide4:checked ~ ul li:nth-child(5) {
-  -webkit-transition: 1s ease-in-out; 
-  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
+@media (max-width: 575px) {
+  #non-business-modal-slider .slider img {
+    width: 100%;
+    height: 300px;
+  }
 }
 
+#one-more-thing {
+  margin-top: 110px;
+}
 #one-more-thing h1 {
   padding: 65px 0; 
   font-family: 'Play', sans-serif;
@@ -686,11 +911,14 @@ Copyright 2017-2018 Hussain Sumrat
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
 }
-
+@media (max-width: 575px) {
+  #one-more-thing h1 {
+    font-size: 30px;
+  }
+}
 #one-more-thing .title h1 {
   background-color: transparent;
 }
-
 #one-more-thing .title span {
   display: block;
   font-family: 'Play', sans-serif;
@@ -699,7 +927,6 @@ Copyright 2017-2018 Hussain Sumrat
   color: #878d8f; 
   text-align: center;
 }
-
 #one-more-thing .create-shop-bg {
   width: 100%;
   height: 380px;
@@ -709,12 +936,201 @@ Copyright 2017-2018 Hussain Sumrat
           background-size: cover;
 }
 
+/*Modal*/
+#business-modal-slider #slide2:checked ~ ul li:nth-child(1),
+#non-business-modal-slider #slide2:checked ~ ul li:nth-child(1) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
+}
+
+#business-modal-slider #slide3:checked ~ ul li:nth-child(1),
+#non-business-modal-slider #slide3:checked ~ ul li:nth-child(1) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0deg);
+}
+
+#business-modal-slider #slide4:checked ~ ul li:nth-child(1),
+#non-business-modal-slider #slide4:checked ~ ul li:nth-child(1) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(40deg) translateZ(-20em) translateX(-10em);
+}
+
+#business-modal-slider #slide2:checked ~ ul li:nth-child(2),
+#non-business-modal-slider #slide2:checked ~ ul li:nth-child(2) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0deg);
+}
+
+#business-modal-slider #slide3:checked ~ ul li:nth-child(2),
+#non-business-modal-slider #slide3:checked ~ ul li:nth-child(2) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0) translateZ(-5em) translateX(-315px) translateY(35px);
+}
+
+#business-modal-slider #slide4:checked ~ ul li:nth-child(2),
+#non-business-modal-slider #slide4:checked ~ ul li:nth-child(2) {
+  -webkit-transition: .4s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(40deg) translateZ(-40em) translateX(-20em);
+}
+
+#business-modal-slider #slide2:checked ~ ul li:nth-child(3),
+#non-business-modal-slider #slide2:checked ~ ul li:nth-child(3) {
+  -webkit-transition: .4s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-40em) translateX(20em);
+}
+
+#business-modal-slider #slide3:checked ~ ul li:nth-child(3),
+#non-business-modal-slider #slide3:checked ~ ul li:nth-child(3) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0) translateZ(-5em) translateX(315px) translateY(35px);
+}
+
+#business-modal-slider #slide4:checked ~ ul li:nth-child(4),
+#non-business-modal-slider #slide4:checked ~ ul li:nth-child(4) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0deg);
+}
+
+#business-modal-slider #slide2:checked ~ ul li:nth-child(4),
+#non-business-modal-slider #slide2:checked ~ ul li:nth-child(4) {
+  -webkit-transition: .4s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-60deg) translateZ(-70em) translateX(5em);
+}
+
+#business-modal-slider #slide3:checked ~ ul li:nth-child(4),
+#non-business-modal-slider #slide3:checked ~ ul li:nth-child(4) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-40em) translateX(20em);
+}
+
+#business-modal-slider #slide4:checked ~ ul li:nth-child(4),
+#non-business-modal-slider #slide4:checked ~ ul li:nth-child(4) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
+}
+
+#business-modal-slider #slide2:checked ~ ul li:nth-child(5),
+#non-business-modal-slider #slide2:checked ~ ul li:nth-child(5) {
+  -webkit-transition: .4s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-60deg) translateZ(-90em) translateX(5em);
+}
+
+#business-modal-slider #slide3:checked ~ ul li:nth-child(5),
+#non-business-modal-slider #slide3:checked ~ ul li:nth-child(5) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-40em) translateX(20em);
+}
+
+#business-modal-slider #slide4:checked ~ ul li:nth-child(5),
+#non-business-modal-slider #slide4:checked ~ ul li:nth-child(5) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
+}
+
+/* Own Css
+******************* */
+#business-modal-slider #slide5:checked ~ ul li:nth-child(1),
+#non-business-modal-slider #slide5:checked ~ ul li:nth-child(1) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
+}
+
+#business-modal-slider #slide6:checked ~ ul li:nth-child(1),
+#non-business-modal-slider #slide6:checked ~ ul li:nth-child(1) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0deg);
+}
+
+#business-modal-slider #slide7:checked ~ ul li:nth-child(1),
+#non-business-modal-slider #slide7:checked ~ ul li:nth-child(1) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(40deg) translateZ(-20em) translateX(-10em);
+}
+
+#business-modal-slider #slide5:checked ~ ul li:nth-child(2),
+#non-business-modal-slider #slide5:checked ~ ul li:nth-child(2) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0deg);
+}
+
+#business-modal-slider #slide6:checked ~ ul li:nth-child(2),
+#non-business-modal-slider #slide6:checked ~ ul li:nth-child(2) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0) translateZ(-5em) translateX(-315px) translateY(35px);
+}
+
+#business-modal-slider #slide7:checked ~ ul li:nth-child(2),
+#non-business-modal-slider #slide7:checked ~ ul li:nth-child(2) {
+  -webkit-transition: .4s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(40deg) translateZ(-40em) translateX(-20em);
+}
+
+#business-modal-slider #slide5:checked ~ ul li:nth-child(3),
+#non-business-modal-slider #slide5:checked ~ ul li:nth-child(3) {
+  -webkit-transition: .4s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-40em) translateX(20em);
+}
+
+#business-modal-slider #slide6:checked ~ ul li:nth-child(3),
+#non-business-modal-slider #slide6:checked ~ ul li:nth-child(3) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0) translateZ(-5em) translateX(315px) translateY(35px);
+}
+
+#business-modal-slider #slide5:checked ~ ul li:nth-child(4),
+#non-business-modal-slider #slide5:checked ~ ul li:nth-child(4) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(0deg);
+}
+
+#business-modal-slider #slide6:checked ~ ul li:nth-child(4),
+#non-business-modal-slider #slide6:checked ~ ul li:nth-child(4) {
+  -webkit-transition: .4s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-60deg) translateZ(-70em) translateX(5em);
+}
+
+#business-modal-slider #slide7:checked ~ ul li:nth-child(4),
+#non-business-modal-slider #slide7:checked ~ ul li:nth-child(4) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-40em) translateX(20em);
+}
+
+#business-modal-slider #slide8:checked ~ ul li:nth-child(4),
+#non-business-modal-slider #slide8:checked ~ ul li:nth-child(4) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
+}
+
+#business-modal-slider #slide5:checked ~ ul li:nth-child(5),
+#non-business-modal-slider #slide5:checked ~ ul li:nth-child(5) {
+  -webkit-transition: .4s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-60deg) translateZ(-90em) translateX(5em);
+}
+
+#business-modal-slider #slide6:checked ~ ul li:nth-child(5),
+#non-business-modal-slider #slide6:checked ~ ul li:nth-child(5) {
+  -webkit-transition: .5s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-40em) translateX(20em);
+}
+
+#business-modal-slider #slide7:checked ~ ul li:nth-child(5),
+#non-business-modal-slider #slide7:checked ~ ul li:nth-child(5) {
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transform: perspective(1000) rotateY(-40deg) translateZ(-20em) translateX(10em);
+}
+
 #navigation {
   padding: 90px 0;
   background-color: #fff;
 }
 #navigation .first-nav-row {
   width: 100%;
+  margin-left: 158px;
+}
+@media (max-width: 575px) {
+  #navigation .first-nav-row {
+    margin-left: 0;
+  }
 }
 #navigation .first-nav-row h2,
   #navigation .second-nav-row h2,
@@ -733,6 +1149,15 @@ Copyright 2017-2018 Hussain Sumrat
 
   -webkit-font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
+}
+@media (max-width: 575px) {
+  #navigation .first-nav-row h2,
+  #navigation .second-nav-row h2,
+  #navigation .third-nav-row h2,
+  #navigation .fourth-nav-row h2 {
+    margin-right: 7px;
+    font-size: 24.37px;
+  }
 }
 #navigation .first-nav-row h2 span,
     #navigation .second-nav-row h2 span,
@@ -759,6 +1184,14 @@ Copyright 2017-2018 Hussain Sumrat
   display: inline-block; 
   width: 160px;
   height: 160px;
+}
+@media (max-width: 575px) {
+  #navigation .first-nav-row .white-img,
+  #navigation .second-nav-row .white-img,
+  #navigation .third-nav-row .white-img,
+  #navigation .fourth-nav-row .white-img {
+    display: none;
+  }
 }
 
 body {
@@ -1146,6 +1579,12 @@ footer .pre-footer {
   -webkit-background-size: cover;
           background-size: cover;
 }
+@media (max-width: 575px) {
+  footer .pre-footer {
+    height: 100%;
+    background-image: none;
+  }
+}
 footer .pre-footer .us-address,
     footer .pre-footer .ch-address {
   padding-top: 110px;
@@ -1154,6 +1593,14 @@ footer .pre-footer .us-address,
   line-height: 1.5625; 
   color: #fffefe;
 }
+@media (max-width: 575px) {
+  footer .pre-footer .us-address,
+  footer .pre-footer .ch-address {
+    padding: 40px 0; 
+    font-size: 16px;
+    color: #afafaf;
+  }
+}
 footer .pre-footer .us-address h3,
       footer .pre-footer .ch-address h3 {
   font-family: 'Play', sans-serif;
@@ -1161,6 +1608,12 @@ footer .pre-footer .us-address h3,
   font-weight: bold;
   line-height: 1.5625;
   line-height: 1.6;
+}
+@media (max-width: 575px) {
+  footer .pre-footer .us-address h3,
+  footer .pre-footer .ch-address h3 {
+    font-size: 20px;
+  }
 }
 footer .pre-footer .ch-address {
   float: right;
@@ -1180,6 +1633,13 @@ footer .pre-footer .social-link-us li,
   border: 1px solid #fff;
   border-radius: 50%;
 }
+@media (max-width: 575px) {
+  footer .pre-footer .social-link-us li,
+  footer .pre-footer .social-link-ch li {
+    background-image: -webkit-linear-gradient(-159deg, #6ba2e7 0%, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%);
+    background-image:     -ms-linear-gradient(-159deg, #6ba2e7 0%, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%);
+  }
+}
 footer .pre-footer .social-link-us li a,
         footer .pre-footer .social-link-ch li a {
   color: #fff;
@@ -1193,6 +1653,11 @@ footer .pre-footer .social-link-ch {
   float: right;
   margin-right: 110px;
 }
+@media (max-width: 575px) {
+  footer .pre-footer .social-link-ch {
+    margin-right: 0;
+  }
+}
 footer .copyright {
   font-family: "Play";
   font-size: 17.439px;
@@ -1200,4 +1665,9 @@ footer .copyright {
   color: #afafaf;
   text-align: center;
   background-color: #414141;
+}
+@media (max-width: 575px) {
+  footer .copyright {
+    line-height: 2.5;
+  }
 }

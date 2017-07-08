@@ -10,6 +10,12 @@
 			text-align: center;
 			margin: 0;
 			margin-bottom: 100px;
+
+			// Below 34em (544px)
+			@include media("<sm") {
+				font-size: 30px;
+			    line-height: 1;
+			}
 		}
 	}
 
@@ -25,14 +31,30 @@
 			color: rgb(122, 128, 130);
   			font-weight: bold;
   			line-height: 0.85;
+
+  			// Below 34em (544px)
+			@include media("<sm") {
+				font-size: 20px;
+				line-height: 1;
+			}
 		}
 
 		.business-btn {
 			margin-left: 205px;
+
+			// Below 34em (544px)
+			@include media("<sm") {
+				margin-left: 0;
+			}
 		}
 		.non-business-btn {
 			float: right;
     		margin-right: 150px;
+
+    		// Below 34em (544px)
+			@include media("<sm") {
+				margin-right: 0;
+			}
 		}
 	}
 }
