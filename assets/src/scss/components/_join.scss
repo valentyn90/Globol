@@ -29,6 +29,18 @@
 	}
 }
 
+#signInModal {
+	.modal-content {
+		margin-top: 50px;
+	}
+
+	button.close {
+		position: inherit;
+    	margin-right: -18px;
+    	margin-top: -16px;
+	}
+}
+
 #signInModal,
 #signUpModal {
 	.modal-dialog {

@@ -341,6 +341,16 @@ div#fashion {
   }
 }
 
+#signInModal .modal-content {
+  margin-top: 50px;
+}
+
+#signInModal button.close {
+  position: inherit;
+  margin-top: -16px; 
+  margin-right: -18px;
+}
+
 #signInModal .modal-dialog,
 #signUpModal .modal-dialog {
   max-width: 97%;
@@ -728,7 +738,7 @@ div#fashion {
 }
 #business-modal-slider .slider input {
   position: relative;
-  top: -1.5em;
+  top: -6.5em;
 }
 #business-modal-slider input[type='radio'] {
   width: 15px;
@@ -756,6 +766,7 @@ div#fashion {
   position: relative;
   width: 24em;
   height: 15em;
+  margin-top: 70px;
   list-style: none;
   -webkit-transition: 1s; 
   -webkit-transform: perspective(1000);
@@ -855,7 +866,7 @@ div#fashion {
 }
 #non-business-modal-slider .slider input {
   position: relative;
-  top: -1.5em;
+  top: -6.5em;
 }
 #non-business-modal-slider input[type='radio'] {
   width: 15px;
@@ -883,6 +894,7 @@ div#fashion {
   position: relative;
   width: 24em;
   height: 15em;
+  margin-top: 70px;
   list-style: none;
   -webkit-transition: 1s; 
   -webkit-transform: perspective(1000);
@@ -914,6 +926,45 @@ div#fashion {
     width: 100%;
     height: 300px;
   }
+}
+
+.slider span {
+  position: absolute;
+  top: -12%;
+  left: 0;
+  display: inline-block;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: .9;
+  color: transparent;
+  color: #7a8082;
+  text-transform: capitalize;
+  background: -webkit-linear-gradient(0deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  background:      -o-linear-gradient(0deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  background:         linear-gradient(90deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
+  -webkit-background-clip: text;
+  opacity: 0; 
+
+  -webkit-text-fill-color: transparent;
+}
+
+.slider span p {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: .9; 
+  color: transparent;
+  color: #7a8082;
+  background: -webkit-linear-gradient(0deg, #819297 10.7%, #819297 13.9%, #819297 13.9%, #819297 15.9%, #819297 17.1%, #819297 17.1%, #819297 20.3%, #819297 20.3%, #819297 23.5%, #819297 23.5%, #819297 26.2%, #819297 29%, #819297 32.2%, #819297 34.2%, #819297, #819297 35%, #819297 35%, #819297, #819297, #819297 42.2%, #819297 43.4%, #819297 45.8%, #819297 45.8%, #819297 48.6%, #819297 49.8%, #819297 54.9%, #819297 56.1%, #819297 56.9%, #819297 56.9%, #819297 58.1%, #819297 58.5%, #819297 58.5%, #819297 60.9%, #819297 62.5%, #819297 64.5%, #819297 65.3%, #819297 70.9%, #819297 72.1%, #819297 74.1%, #819297 77.6%, #819297 78.8%, #819297 80.8%, #819297);
+  background:      -o-linear-gradient(0deg, #819297 10.7%, #819297 13.9%, #819297 13.9%, #819297 15.9%, #819297 17.1%, #819297 17.1%, #819297 20.3%, #819297 20.3%, #819297 23.5%, #819297 23.5%, #819297 26.2%, #819297 29%, #819297 32.2%, #819297 34.2%, #819297, #819297 35%, #819297 35%, #819297, #819297, #819297 42.2%, #819297 43.4%, #819297 45.8%, #819297 45.8%, #819297 48.6%, #819297 49.8%, #819297 54.9%, #819297 56.1%, #819297 56.9%, #819297 56.9%, #819297 58.1%, #819297 58.5%, #819297 58.5%, #819297 60.9%, #819297 62.5%, #819297 64.5%, #819297 65.3%, #819297 70.9%, #819297 72.1%, #819297 74.1%, #819297 77.6%, #819297 78.8%, #819297 80.8%, #819297);
+  background:         linear-gradient(90deg, #819297 10.7%, #819297 13.9%, #819297 13.9%, #819297 15.9%, #819297 17.1%, #819297 17.1%, #819297 20.3%, #819297 20.3%, #819297 23.5%, #819297 23.5%, #819297 26.2%, #819297 29%, #819297 32.2%, #819297 34.2%, #819297, #819297 35%, #819297 35%, #819297, #819297, #819297 42.2%, #819297 43.4%, #819297 45.8%, #819297 45.8%, #819297 48.6%, #819297 49.8%, #819297 54.9%, #819297 56.1%, #819297 56.9%, #819297 56.9%, #819297 58.1%, #819297 58.5%, #819297 58.5%, #819297 60.9%, #819297 62.5%, #819297 64.5%, #819297 65.3%, #819297 70.9%, #819297 72.1%, #819297 74.1%, #819297 77.6%, #819297 78.8%, #819297 80.8%, #819297);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+input[type="radio"]:checked + span {
+  opacity: 1;
 }
 
 #one-more-thing h1 {
