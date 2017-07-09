@@ -29,13 +29,14 @@
 	}
 }
 
-#signInModal {
+#signInModal,
+#signUpModal {
 	.modal-dialog {
 	    max-width: 97%;
 	    height: auto;
-	    margin-top: 100px;
 	}
 }
+
 .modal#signUpModal,
 .modal#signInModal {
 	max-width: 562px;
@@ -46,23 +47,27 @@
 .sign-in-form {
 	border-radius: 5px;
   	background-color: rgb(255, 255, 255);
-  	box-shadow: 0px 0px 8px 0px rgba(38, 77, 194, 0.2);
+  	/*box-shadow: 0px 0px 8px 0px rgba(38, 77, 194, 0.2);*/
   	padding: 0 20px;
   	margin: 0;
 
   	h3 {
-  		padding: 67px 0 0 0;
   		margin: 0;
   		text-align: center;
+  		@include primary-font(30px);
+		color: rgb(122, 128, 130);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 3;
   	}
 
   	.or {
 		display: block;
 		width: 100%;
 		height: 1px;
-		border-bottom: 1px solid #dee3e4;
+		border-bottom: 2px solid #dee3e4;
 		position: relative;
-		margin: 20px 0;
+		margin: 45px 0;
 
 		&:before {
 			content: 'or';
@@ -80,14 +85,15 @@
 
 	.login-with-fb {
 		width: 100%;
-		height: 40px;
 		display: block;
 		margin: 15px 0;
 		color: #fff;
 		text-align: center;
 		line-height: 40px;
-		font-size: 14px;
 		opacity: .95;
+		@include primary-font(24px);
+		color: rgb(255, 255, 255);
+		line-height: 2.251;
 
 	    &:hover {
 	    	text-decoration: none;
@@ -107,13 +113,11 @@
 		font-size: 21px;
 		width: 50px;
 		height: 26px;
-		margin: 7px;
-		padding: 2px;
+		padding: 15px;
 		text-align: center;
 	}
 
   	form {
-  		padding: 67px 0;
 
   		.form-group {
 
@@ -138,10 +142,15 @@
   		}
 
   		button {
+  			@include primary-font(22px);
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			line-height: 2.455;
+			text-align: center;
   			border-radius: 0;
   			width: 100%;
   			border: 0;
-  			height: 60px;
+  			margin: 40px 0;
   			background-image: -moz-linear-gradient( 0deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
   			background-image: -webkit-linear-gradient( 0deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
   			background-image: -ms-linear-gradient( 0deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
@@ -149,12 +158,23 @@
   			&:hover,
   			&:active,
   			&:focus {
-  				background-color: none;
+  				border: none;
+  				background-image: -moz-linear-gradient( 0deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
+  				background-image: -webkit-linear-gradient( 0deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
+  				background-image: -ms-linear-gradient( 0deg, rgb(107,162,231) 0%, rgb(93,167,235) 6%, rgb(85,195,214) 14%, rgb(85,227,187) 28%, rgb(239,218,143) 37%, rgb(239,209,106) 46%, rgb(245,209,142) 53%, rgb(249,134,128) 65%, rgb(247,124,131) 74%, rgb(219,132,180) 83%, rgb(187,141,211) 93%, rgb(174,144,215) 100%);
   			}
   		}
 
   		p {
   			text-align: center;
+  			@include primary-font(16px);
+
+  			a {
+  				color: #f97f80;
+  			}
+  		}
+  		.terms {
+  			padding-bottom: 20px;
   		}
   	}
 }

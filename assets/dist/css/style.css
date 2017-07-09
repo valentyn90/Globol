@@ -341,10 +341,10 @@ div#fashion {
   }
 }
 
-#signInModal .modal-dialog {
+#signInModal .modal-dialog,
+#signUpModal .modal-dialog {
   max-width: 97%;
   height: auto;
-  margin-top: 100px;
 }
 
 .modal#signUpModal,
@@ -355,18 +355,23 @@ div#fashion {
 
 .sign-up-form,
 .sign-in-form {
+  /*box-shadow: 0px 0px 8px 0px rgba(38, 77, 194, 0.2);*/
   padding: 0 20px;
   margin: 0; 
   background-color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 8px 0 rgba(38, 77, 194, .2);
-          box-shadow: 0 0 8px 0 rgba(38, 77, 194, .2);
 }
 .sign-up-form h3,
   .sign-in-form h3 {
-  padding: 67px 0 0 0;
   margin: 0;
+  font-family: 'Play', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5625;
+  line-height: 3; 
+  color: #7a8082;
   text-align: center;
+  text-transform: uppercase;
 }
 .sign-up-form .or,
   .sign-in-form .or {
@@ -374,8 +379,8 @@ div#fashion {
   display: block;
   width: 100%;
   height: 1px;
-  margin: 20px 0; 
-  border-bottom: 1px solid #dee3e4;
+  margin: 45px 0; 
+  border-bottom: 2px solid #dee3e4;
 }
 .sign-up-form .or:before,
     .sign-in-form .or:before {
@@ -394,11 +399,14 @@ div#fashion {
   .sign-in-form .login-with-fb {
   display: block;
   width: 100%;
-  height: 40px;
   margin: 15px 0;
-  font-size: 14px;
+  font-family: 'Play', sans-serif;
+  font-size: 24px;
   line-height: 40px;
+  line-height: 1.5625;
+  line-height: 2.251; 
   color: #fff;
+  color: white;
   text-align: center;
   opacity: .95;
 }
@@ -419,17 +427,12 @@ div#fashion {
   float: left;
   width: 50px;
   height: 26px;
-  padding: 2px;
-  margin: 7px;
+  padding: 15px;
   font-size: 21px;
   text-align: center;
 }
-.sign-up-form form,
-  .sign-in-form form {
-  padding: 67px 0;
-}
 .sign-up-form form .form-group .form-control,
-    .sign-in-form form .form-group .form-control {
+  .sign-in-form form .form-group .form-control {
   padding: 1rem .75rem; 
   background-color: #f6f7ff;
   border-color: #dee2f8;
@@ -438,7 +441,7 @@ div#fashion {
   border-radius: 0;
 }
 .sign-up-form form .form-group span,
-    .sign-in-form form .form-group span {
+  .sign-in-form form .form-group span {
   position: absolute;
   right: 40px;
   z-index: 1; 
@@ -448,23 +451,43 @@ div#fashion {
   border: none;
 }
 .sign-up-form form button,
-    .sign-in-form form button {
+  .sign-in-form form button {
   width: 100%;
-  height: 60px;
+  margin: 40px 0;
+  font-family: 'Play', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5625;
+  line-height: 2.455;
+  color: white;
+  text-align: center;
   background-image: -webkit-linear-gradient(0deg, #6ba2e7 0%, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%);
   background-image:     -ms-linear-gradient(0deg, #6ba2e7 0%, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%); 
   border: 0;
   border-radius: 0;
 }
 .sign-up-form form button:hover, .sign-up-form form button:active, .sign-up-form form button:focus,
-      .sign-in-form form button:hover,
-      .sign-in-form form button:active,
-      .sign-in-form form button:focus {
-  background-color: none;
+    .sign-in-form form button:hover,
+    .sign-in-form form button:active,
+    .sign-in-form form button:focus {
+  background-image: -webkit-linear-gradient(0deg, #6ba2e7 0%, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%);
+  background-image:     -ms-linear-gradient(0deg, #6ba2e7 0%, #5da7eb 6%, #55c3d6 14%, #55e3bb 28%, #efda8f 37%, #efd16a 46%, #f5d18e 53%, #f98680 65%, #f77c83 74%, #db84b4 83%, #bb8dd3 93%, #ae90d7 100%); 
+  border: none;
 }
 .sign-up-form form p,
-    .sign-in-form form p {
+  .sign-in-form form p {
+  font-family: 'Play', sans-serif;
+  font-size: 16px;
+  line-height: 1.5625; 
   text-align: center;
+}
+.sign-up-form form p a,
+    .sign-in-form form p a {
+  color: #f97f80;
+}
+.sign-up-form form .terms,
+  .sign-in-form form .terms {
+  padding-bottom: 20px;
 }
 
 #contact .title h1 {
@@ -691,7 +714,7 @@ div#fashion {
 }
 #business-modal-slider .slider {
   position: absolute;
-  top: 43%;
+  top: 40%;
   left: 50%;
   width: 24em; 
   height: 15em;
@@ -818,7 +841,7 @@ div#fashion {
 }
 #non-business-modal-slider .slider {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   width: 24em; 
   height: 15em;
@@ -893,11 +916,9 @@ div#fashion {
   }
 }
 
-#one-more-thing {
-  margin-top: 110px;
-}
 #one-more-thing h1 {
-  padding: 65px 0; 
+  padding: 65px 0;
+  margin: 0; 
   font-family: 'Play', sans-serif;
   font-size: 47px;
   font-weight: 600;
@@ -916,9 +937,11 @@ div#fashion {
     font-size: 30px;
   }
 }
+
 #one-more-thing .title h1 {
   background-color: transparent;
 }
+
 #one-more-thing .title span {
   display: block;
   font-family: 'Play', sans-serif;
@@ -927,6 +950,7 @@ div#fashion {
   color: #878d8f; 
   text-align: center;
 }
+
 #one-more-thing .create-shop-bg {
   width: 100%;
   height: 380px;

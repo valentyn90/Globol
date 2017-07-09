@@ -127,7 +127,7 @@
         margin: -7.5em -12em;
         position: absolute;
         text-align: center;
-        top: 43%;
+        top: 40%;
         width: 24em;
 
         // Below 34em (544px)
@@ -239,7 +239,7 @@
         margin: -7.5em -12em;
         position: absolute;
         text-align: center;
-        top: 50%;
+        top: 55%;
         width: 24em;
 
         // Below 34em (544px)
@@ -309,7 +309,6 @@
 }
 
 #one-more-thing {
-    margin-top: 110px;
 
 	h1 {
 		@include heading-font(47px);
@@ -319,6 +318,7 @@
 		text-align: center;
 		background-color: #efefef;
 		padding: 65px 0;
+        margin: 0;
 
         // Below 34em (544px)
         @include media("<sm") {
