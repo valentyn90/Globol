@@ -86,7 +86,7 @@
 
 .down-arrow {
 	position: absolute;
-    bottom: -690px;
+    bottom: -555px;
     width: 100%;
     text-align: center;
 
@@ -97,7 +97,7 @@
 	    color: #fff;
 
 	    i {
-	    	top: -295px;
+	    	top: -290px;
     		position: relative;
 	    }
     }
@@ -119,4 +119,5 @@ div#fashion {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }

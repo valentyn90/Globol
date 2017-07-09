@@ -80,6 +80,12 @@
         line-height: 1;
         text-transform: capitalize;
         cursor: pointer;
+
+        // Below 34em (544px)
+        @include media("<sm") {
+            padding: 15px 0;
+            font-size: 32px;
+        }
     }
 }
 
@@ -98,7 +104,7 @@
 
         // Below 34em (544px)
         @include media("<sm") {
-            font-size: 28px;
+            font-size: 26px;
         }
 
         span {
@@ -132,7 +138,7 @@
 
         // Below 34em (544px)
         @include media("<sm") {
-            top: 60%;
+            top: 65%;
         }
     }
 
@@ -167,6 +173,11 @@
         -webkit-transform: perspective(1000);
         -webkit-transform-style: preserve-3d;
         -webkit-transition: 1s;
+
+        // Below 34em (544px)
+        @include media("<sm") {
+            margin-top: 0;
+        }
     }
     .slider ul li {
         left: 0;    
@@ -175,6 +186,11 @@
         background:none;    
         -webkit-transform-origin: center;    
         -webkit-transform-style: preserve-3d;  
+
+        // Below 34em (544px)
+        @include media("<sm") {
+            left: 17%;
+        }
            
     }
     .slider ul li:nth-child(3){
@@ -191,8 +207,8 @@
 
         // Below 34em (544px)
         @include media("<sm") {
-            width: 100%;
-            height: 300px;
+            width: 225px;
+            height: 225px;
         }
     }
     
@@ -246,7 +262,7 @@
 
         // Below 34em (544px)
         @include media("<sm") {
-            top: 60%;
+            top: 75%;
         }
     }
     
@@ -281,6 +297,11 @@
         -webkit-transform: perspective(1000);
         -webkit-transform-style: preserve-3d;
         -webkit-transition: 1s;
+
+        // Below 34em (544px)
+        @include media("<sm") {
+            margin-top: 32px;
+        }
     }
     .slider ul li {
         left: 0;    
@@ -289,6 +310,11 @@
         background:none;    
         -webkit-transform-origin: center;    
         -webkit-transform-style: preserve-3d;  
+
+        // Below 34em (544px)
+        @include media("<sm") {
+            left: 17%;
+        }
            
     }
     .slider ul li:nth-child(3){
@@ -305,8 +331,8 @@
 
         // Below 34em (544px)
         @include media("<sm") {
-            width: 100%;
-            height: 300px;
+            width: 225px;
+            height: 225px;
         }
     }
     
@@ -327,18 +353,30 @@
     line-height: 0.9;
     text-transform: capitalize;
     opacity: 0;
+
+    // Below 34em (544px)
+    @include media("<sm") {
+        font-size: 30px;
+        left: 33px;
+        top: -22%;
+    }
 }
 
 .slider span p {
-    display: inline-block;
+    display: block;
     background: linear-gradient(90deg, #819297 10.7%, #819297 13.9%, #819297 13.9%, #819297 15.9%, #819297 17.1%, #819297 17.1%, #819297 20.3%, #819297 20.3%, #819297 23.5%, #819297 23.5%, #819297 26.2%, #819297 29%, #819297 32.2%, #819297 34.2%, #819297, #819297 35%, #819297 35%, #819297, #819297, #819297 42.2%, #819297 43.4%, #819297 45.8%, #819297 45.8%, #819297 48.6%, #819297 49.8%, #819297 54.9%, #819297 56.1%, #819297 56.9%, #819297 56.9%, #819297 58.1%, #819297 58.5%, #819297 58.5%, #819297 60.9%, #819297 62.5%, #819297 64.5%, #819297 65.3%, #819297 70.9%, #819297 72.1%, #819297 74.1%, #819297 77.6%, #819297 78.8%, #819297 80.8%, #819297);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
     font-size: 20px;
     color: rgb(122, 128, 130);
     font-weight: bold;
     line-height: 0.9;
+
+    // Below 34em (544px)
+    @include media("<sm") {
+        font-size: 17px;
+    }
 }
 
 input[type="radio"]:checked + span {
@@ -360,6 +398,7 @@ input[type="radio"]:checked + span {
         // Below 34em (544px)
         @include media("<sm") {
             font-size: 30px;
+            padding: 40px 0;
         }
 	}
 	.title {
