@@ -46,6 +46,11 @@
 			@include media("<sm") {
 				margin-left: 0;
 			}
+
+			// Between 48em (768px) and 62em (992px)
+			@include media(">md", "<lg") {
+				margin-left: 60px;
+			}
 		}
 		.non-business-btn {
 			float: right;
@@ -56,5 +61,14 @@
 				margin-right: 0;
 			}
 		}
+	}
+}
+
+@media only screen and (device-width: 768px) {
+	.business-btn {
+		margin-left: 60px !important;
+	}
+	.non-business-btn {
+		margin-right: 50px !important;
 	}
 }

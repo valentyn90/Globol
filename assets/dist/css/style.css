@@ -144,6 +144,20 @@ div#fashion {
           justify-content: center;
 }
 
+/* 27 inch iMac ----------- */
+@media only screen and (min-width: 2400px) {
+  .down-arrow {
+    position: absolute;
+    bottom: -795px;
+    width: 100%;
+    text-align: center;
+  }
+  .down-arrow a i {
+    position: relative; 
+    top: -250px;
+  }
+}
+
 #explore {
   padding: 100px 0; 
   background-color: #fafaff;
@@ -295,6 +309,12 @@ div#fashion {
     margin-left: 0;
   }
 }
+
+@media (min-width: 769px) and (max-width: 991px) {
+  #user-type .contents .business-btn {
+    margin-left: 60px;
+  }
+}
 #user-type .contents .non-business-btn {
   float: right;
   margin-right: 150px;
@@ -302,6 +322,15 @@ div#fashion {
 @media (max-width: 575px) {
   #user-type .contents .non-business-btn {
     margin-right: 0;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  .business-btn {
+    margin-left: 60px !important;
+  }
+  .non-business-btn {
+    margin-right: 50px !important;
   }
 }
 

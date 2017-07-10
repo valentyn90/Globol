@@ -121,3 +121,20 @@ div#fashion {
   justify-content: center;
   overflow: hidden;
 }
+
+/* 27 inch iMac ----------- */
+@media only screen and (min-width : 2400px) {
+	.down-arrow {
+		position: absolute;
+	    bottom: -795px;
+	    width: 100%;
+	    text-align: center;
+
+	    a {
+		    i {
+		    	top: -250px;
+	    		position: relative;
+		    }
+	    }
+	}
+}
