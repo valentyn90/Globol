@@ -62,9 +62,10 @@
 	}
 }
 
-.modal-footer {
+#nonBusinessModal .modal-footer {
     border-top: 0;
     background-color: #efefef;
+    margin-top: 210px;
 
     h1 {
         margin: 0 auto;
@@ -145,6 +146,7 @@
     .slider input {
         position: relative;
         top: -6.5em;
+        right: 5%;
     }
     input[type='radio'] {
         -webkit-appearance: none;
@@ -204,6 +206,7 @@
         width: 390px;
         vertical-align: top;
         border-radius: 4px;
+        margin-top: 50px;
 
         // Below 34em (544px)
         @include media("<sm") {
@@ -257,7 +260,7 @@
         margin: -7.5em -12em;
         position: absolute;
         text-align: center;
-        top: 55%;
+        top: 66%;
         width: 24em;
 
         // Below 34em (544px)
@@ -269,6 +272,7 @@
     .slider input {
         position: relative;
         top: -6.5em;
+        right: 5%;
     }
     input[type='radio'] {
         -webkit-appearance: none;
@@ -317,7 +321,7 @@
         }
            
     }
-    .slider ul li:nth-child(3){
+    .slider ul li:nth-child(3) {
         -webkit-transition: 1s ease-in-out;
         -webkit-transform: perspective(1000);
         
@@ -328,6 +332,7 @@
         width: 390px;
         vertical-align: top;
         border-radius: 4px;
+        margin-top: 50px;
 
         // Below 34em (544px)
         @include media("<sm") {
@@ -335,10 +340,9 @@
             height: 225px;
         }
     }
-    
 }
 
-.slider span {
+.slider p {
     position: absolute;
     top: -12%;
     left: 0;
@@ -362,7 +366,12 @@
     }
 }
 
-.slider span p {
+.slider p img {
+    width: 130px !important;
+    height: 50px !important;
+    margin-top: 0 !important;
+}
+.slider p span {
     display: block;
     background: linear-gradient(90deg, #819297 10.7%, #819297 13.9%, #819297 13.9%, #819297 15.9%, #819297 17.1%, #819297 17.1%, #819297 20.3%, #819297 20.3%, #819297 23.5%, #819297 23.5%, #819297 26.2%, #819297 29%, #819297 32.2%, #819297 34.2%, #819297, #819297 35%, #819297 35%, #819297, #819297, #819297 42.2%, #819297 43.4%, #819297 45.8%, #819297 45.8%, #819297 48.6%, #819297 49.8%, #819297 54.9%, #819297 56.1%, #819297 56.9%, #819297 56.9%, #819297 58.1%, #819297 58.5%, #819297 58.5%, #819297 60.9%, #819297 62.5%, #819297 64.5%, #819297 65.3%, #819297 70.9%, #819297 72.1%, #819297 74.1%, #819297 77.6%, #819297 78.8%, #819297 80.8%, #819297);
     -webkit-background-clip: text;
@@ -372,6 +381,7 @@
     color: rgb(122, 128, 130);
     font-weight: bold;
     line-height: 0.9;
+    margin-top: 20px;
 
     // Below 34em (544px)
     @include media("<sm") {
@@ -379,11 +389,12 @@
     }
 }
 
-input[type="radio"]:checked + span {
+input[type="radio"]:checked + p {
     opacity: 1;
 }
 
 #one-more-thing {
+    margin-top: 210px;
 
 	h1 {
 		@include heading-font(47px);

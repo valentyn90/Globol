@@ -645,11 +645,12 @@ div#fashion {
   color: #8ea2a8;
 }
 
-.modal-footer {
-  background-color: #efefef; 
+#nonBusinessModal .modal-footer {
+  margin-top: 210px; 
+  background-color: #efefef;
   border-top: 0;
 }
-.modal-footer h1 {
+#nonBusinessModal .modal-footer h1 {
   display: inline-block;
   padding: 57px 0;
   margin: 0 auto;
@@ -673,7 +674,7 @@ div#fashion {
   text-rendering: optimizeLegibility;
 }
 @media (max-width: 575px) {
-  .modal-footer h1 {
+  #nonBusinessModal .modal-footer h1 {
     padding: 15px 0;
     font-size: 32px;
   }
@@ -746,6 +747,7 @@ div#fashion {
 #business-modal-slider .slider input {
   position: relative;
   top: -6.5em;
+  right: 5%;
 }
 #business-modal-slider input[type='radio'] {
   width: 15px;
@@ -806,8 +808,9 @@ div#fashion {
 #business-modal-slider .slider img {
   width: 390px;
   height: 390px;
+  margin-top: 50px; 
   vertical-align: top;
-  border-radius: 4px; 
+  border-radius: 4px;
   -webkit-transform: perspective(1000);
 }
 @media (max-width: 575px) {
@@ -869,7 +872,7 @@ div#fashion {
 }
 #non-business-modal-slider .slider {
   position: absolute;
-  top: 55%;
+  top: 66%;
   left: 50%;
   width: 24em; 
   height: 15em;
@@ -884,6 +887,7 @@ div#fashion {
 #non-business-modal-slider .slider input {
   position: relative;
   top: -6.5em;
+  right: 5%;
 }
 #non-business-modal-slider input[type='radio'] {
   width: 15px;
@@ -944,8 +948,9 @@ div#fashion {
 #non-business-modal-slider .slider img {
   width: 390px;
   height: 390px;
+  margin-top: 50px; 
   vertical-align: top;
-  border-radius: 4px; 
+  border-radius: 4px;
   -webkit-transform: perspective(1000);
 }
 @media (max-width: 575px) {
@@ -955,7 +960,7 @@ div#fashion {
   }
 }
 
-.slider span {
+.slider p {
   position: absolute;
   top: -12%;
   left: 0;
@@ -975,18 +980,25 @@ div#fashion {
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 575px) {
-  .slider span {
+  .slider p {
     top: -22%; 
     left: 33px;
     font-size: 30px;
   }
 }
 
-.slider span p {
+.slider p img {
+  width: 130px !important;
+  height: 50px !important;
+  margin-top: 0 !important;
+}
+
+.slider p span {
   display: block;
+  margin-top: 20px; 
   font-size: 20px;
   font-weight: bold;
-  line-height: .9; 
+  line-height: .9;
   color: transparent;
   color: #7a8082;
   background: -webkit-linear-gradient(0deg, #819297 10.7%, #819297 13.9%, #819297 13.9%, #819297 15.9%, #819297 17.1%, #819297 17.1%, #819297 20.3%, #819297 20.3%, #819297 23.5%, #819297 23.5%, #819297 26.2%, #819297 29%, #819297 32.2%, #819297 34.2%, #819297, #819297 35%, #819297 35%, #819297, #819297, #819297 42.2%, #819297 43.4%, #819297 45.8%, #819297 45.8%, #819297 48.6%, #819297 49.8%, #819297 54.9%, #819297 56.1%, #819297 56.9%, #819297 56.9%, #819297 58.1%, #819297 58.5%, #819297 58.5%, #819297 60.9%, #819297 62.5%, #819297 64.5%, #819297 65.3%, #819297 70.9%, #819297 72.1%, #819297 74.1%, #819297 77.6%, #819297 78.8%, #819297 80.8%, #819297);
@@ -997,15 +1009,18 @@ div#fashion {
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 575px) {
-  .slider span p {
+  .slider p span {
     font-size: 17px;
   }
 }
 
-input[type="radio"]:checked + span {
+input[type="radio"]:checked + p {
   opacity: 1;
 }
 
+#one-more-thing {
+  margin-top: 210px;
+}
 #one-more-thing h1 {
   padding: 65px 0;
   margin: 0; 
@@ -1028,11 +1043,9 @@ input[type="radio"]:checked + span {
     font-size: 30px;
   }
 }
-
 #one-more-thing .title h1 {
   background-color: transparent;
 }
-
 #one-more-thing .title span {
   display: block;
   font-family: 'Play', sans-serif;
@@ -1041,7 +1054,6 @@ input[type="radio"]:checked + span {
   color: #878d8f; 
   text-align: center;
 }
-
 #one-more-thing .create-shop-bg {
   width: 100%;
   height: 380px;
