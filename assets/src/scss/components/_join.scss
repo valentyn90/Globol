@@ -3,16 +3,16 @@
 
 	.title {
 		text-align: center;
-		background-color: #efefef;
 
 		h1 {
-			padding: 57px 0;
+			padding: 15px 25px;
+			border: 2px solid #efefef;
 			display: inline-block;
             background: linear-gradient(90deg, #ae90d6 10.7%, #b88dd5 13.9%, #bf8ad2 13.9%, #d087bc 15.9%, #d586b6 17.1%, #de83af 17.1%, #e381aa 20.3%, #e57fa4 20.3%, #eb809e 23.5%, #ec7e99 23.5%, #f27e91 26.2%, #f47f85 29%, #f8857e 32.2%, #f7927e 34.2%, #f6967e, #f6967e 35%, #f89a80 35%, #f8b088, #f5c78c, #f4d18d 42.2%, #f5d089 43.4%, #f2cf7d 45.8%, #f0d177 45.8%, #eed16b 48.6%, #f0d06b 49.8%, #eed883 54.9%, #f2d88b 56.1%, #f0d88e 56.9%, #ecd994 56.9%, #ddda97 58.1%, #ddda97 58.5%, #cfdd9f 58.5%, #88e3aa 60.9%, #62e5b1 62.5%, #54e1be 64.5%, #51e1be 65.3%, #56ccce 70.9%, #53c8d1 72.1%, #55bfd9 74.1%, #5aabea 77.6%, #5ba9eb 78.8%, #67a3eb 80.8%, #6ca2e8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             color: transparent;
-			@include heading-font(52px);
+			@include heading-font(40px);
 			color: rgb(122, 128, 130);
 			font-weight: bold;
 			line-height: 0.9;
@@ -23,7 +23,7 @@
 			// Below 34em (544px)
 			@include media("<sm") {
 				font-size: 40px;
-				padding: 40px;
+				padding: 20px;
 			}
 		}
 	}
@@ -158,7 +158,7 @@
   			@include primary-font(22px);
 			color: rgb(255, 255, 255);
 			font-weight: bold;
-			line-height: 2.455;
+			line-height: 2.1;
 			text-align: center;
   			border-radius: 0;
   			width: 100%;
@@ -192,3 +192,6 @@
   	}
 }
 
+.sign-in-form {
+	padding: 20px;
+}

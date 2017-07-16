@@ -3,7 +3,7 @@
 
 	.title {
 		h1 {
-			@include heading-font(42px);
+			@include heading-font(36px);
 			color: rgb(122, 128, 130);
 			font-weight: bold;
 			line-height: 0.708;
@@ -20,14 +20,28 @@
 	}
 
 	.contents {
-		background: #eef2f5 url(../img/user-type.jpg) no-repeat center center;
-		height: 759px;
-		width: 100%;
+		
+		img {
+			/*height: calc(100vh - 200px);*/
+    		margin: 0 auto;
+    		display: block;
+    		max-width: 1000px;
+    		max-height: 550px;
+
+    		// Below 48em (768px)
+			@include media("<md") {
+			 	max-width: 635px;
+			}
+			// Below 34em (544px)
+			@include media("<sm") {
+				max-width: 370px;
+			}
+		}
 		
 
 		.business-btn,
 		.non-business-btn {
-			@include primary-font(35px);
+			@include primary-font(30px);
 			color: rgb(122, 128, 130);
   			font-weight: bold;
   			line-height: 0.85;

@@ -1,13 +1,13 @@
 #contact {
 	.title {
 		h1 {
-			@include heading-font(52.317px);
+			@include heading-font(38.317px);
 			background-color: #efefef;
 			color: rgb(122, 128, 130);
 			font-weight: bold;
 			line-height: 0.9;
 			text-align: center;
-			padding: 68px 0;
+			padding: 60px 0;
 
 			// Below 34em (544px)
 			@include media("<sm") {
@@ -18,7 +18,7 @@
 	}
 	p {
 		padding: 96px 0 68px 0;
-		@include primary-font(22.671px);
+		@include primary-font(20.671px);
 		color: rgb(129, 146, 151);
 		line-height: 1.384;
 		text-align: center;

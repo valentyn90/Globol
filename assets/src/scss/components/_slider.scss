@@ -1,4 +1,5 @@
 .slider-content {
+	margin-bottom: 325px;
 
 	h3 {
 		font-size: 26.206px;
@@ -34,13 +35,13 @@
 }
 
 // Search
-.flag-text { margin-left: 10px; }
 .search-bar {
 	display: flex;
-	border: 3px solid rgb(235,235,235);
+	border: 4px solid rgba(235,235,235, 0.2);
+	border-radius: 3px;
 
 	.list-icon {
-		border-right: 1px solid #dedede;
+		border-right: 1px solid rgb(235, 235, 235);
 		background-color: #fff;
 
 		.fa-list-ul {
@@ -50,10 +51,14 @@
 		}
 	}
 
+	select.form-control {
+	    border: 0;
+	}
+
 	.form-control {
 		border: 0;
 		border-radius: 0;
-		height: 55px;
+		height: 55px !important;
 	}
 
 	button {
@@ -68,12 +73,36 @@
 		}
 	}
 }
-
+.ddTitle.borderRadiusTp {
+    background: none;
+}
+.ddTitleText .ddlabel {
+	display: none;
+}
+.dd .ddTitle .ddTitleText {
+    padding: 17px 20px 5px 5px;
+}
+.dd .arrow {
+    margin-top: -3px;
+}
 .select2-container--default .select2-selection--single {
 	border-radius: 0;
 	height: 55px;
 	border: 0;
 	border-right: 1px solid #dedede;
+}
+.dd .divider {
+	border: 0;
+}
+.dd {
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+}
+div#countries_child {
+    top: 100% !important;
+    left: -75%;
+    width: 200px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -86,7 +115,7 @@
 
 .down-arrow {
 	position: absolute;
-    bottom: -555px;
+    bottom: -335px;
     width: 100%;
     text-align: center;
 
@@ -97,9 +126,14 @@
 	    color: #fff;
 
 	    i {
-	    	top: -290px;
+	    	top: -280px;
     		position: relative;
 	    }
+
+	    // Below 34em (544px)
+		@include media("<sm") {
+			padding: 168px;
+		}
     }
 }
 
@@ -113,9 +147,10 @@ video {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    z-index: -1
 }
 div#fashion {
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,9 +159,15 @@ div#fashion {
 
 /* 27 inch iMac ----------- */
 @media only screen and (min-width : 2400px) {
+	.search-bar-scrolling {
+	    position: fixed;
+	    top: 1%;
+	    left: 38%;
+	    width: 670px;
+	}
 	.down-arrow {
 		position: absolute;
-	    bottom: -795px;
+	    bottom: -725px;
 	    width: 100%;
 	    text-align: center;
 
@@ -138,3 +179,6 @@ div#fashion {
 	    }
 	}
 }
+
+
+
