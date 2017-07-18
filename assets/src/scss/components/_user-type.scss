@@ -3,7 +3,7 @@
 
 	.title {
 		h1 {
-			@include heading-font(36px);
+			@include heading-font(34px);
 			color: rgb(122, 128, 130);
 			font-weight: bold;
 			line-height: 0.708;
@@ -41,7 +41,7 @@
 
 		.business-btn,
 		.non-business-btn {
-			@include primary-font(30px);
+			@include primary-font(28px);
 			color: rgb(122, 128, 130);
   			font-weight: bold;
   			line-height: 0.85;

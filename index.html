@@ -79,7 +79,7 @@
           transform: translateX(-340px) translateZ(-130px);
           opacity: .9;
           transition: all 1s cubic-bezier(.48, .16, .15, .98);
-              margin-top: 0px;
+            margin-top: 0px;
         }
 
         
@@ -121,7 +121,7 @@
           transform: translateX(290px) translateZ(-130px);
           opacity: .9;
           transition: all 1s cubic-bezier(.48, .16, .15, .98);
-              margin-top: 0px;
+            margin-top: 0px;
         }
         .carousel-3d-item:nth-of-type(3) .slide-content ,
         #carousel-3d-controller-1:checked ~ .carousel-3d-item:nth-of-type(3) .slide-content,
@@ -130,7 +130,7 @@
           transform: translateX(290px) translateZ(-130px);
           opacity: .0;
           transition: all 1s cubic-bezier(.48, .16, .15, .98);
-              margin-top: 0px;
+            margin-top: 0px;
         }
         .slider-containerssssssssss {
             float: left;
@@ -156,6 +156,12 @@
             margin-bottom: 77px;
             width: 100%;
         }
+        /* 27 inch iMac ----------- */
+        @media only screen and (min-width : 2400px) {
+            .slide-content {
+                left: 32%;
+            }
+        }
   </style>
 </head>
 
@@ -165,7 +171,7 @@
         <div class="container">
             <nav>
                 <a class="nav-item" href="#contact">Contact Us</a>
-                <a class="nav-item" href="#">About</a>
+                <a class="nav-item" href="#short-para">About</a>
                 <img class="logo" src="assets/dist/img/logo.png">
                 <a class="nav-item" href="#" data-toggle="modal" data-target="#signInModal">Login</a>
                 <a class="nav-item" href="#" data-toggle="modal" data-target="#signUpModal">register</a>
@@ -227,7 +233,7 @@
     <div class="mobile-nav" id="mobile-nav">
         <a href="#"> <img class="logo" src="assets/dist/img/scrolling-logo.png" style="width: 30px;height: 30px;"> </a>
         <a class="nav-item" href="#contact">Contact Us</a>
-        <a class="nav-item" href="#">About</a>
+        <a class="nav-item" href="#short-para">About</a>
         <a class="nav-item" href="#" data-toggle="modal" data-target="#signInModal">Login</a>
         <a class="nav-item" href="#" data-toggle="modal" data-target="#signUpModal">register</a>
         <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -807,25 +813,25 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="explore-item">
+                    <div class="explore-item" style="width: 150px;float: right;">
                         <img src="assets/dist/img/explore-1.jpg">
                         <h3>Global Stories</h3>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="width: 150px;margin: 0 auto;">
                     <div class="explore-item">
                         <img src="assets/dist/img/explore-2.jpg">
                         <h3>Global Stories</h3>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="explore-item">
+                    <div class="explore-item" style="width: 150px;margin: 0 auto;">
                         <img src="assets/dist/img/explore-3.jpg">
                         <h3>Global Stories</h3>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="explore-item">
+                    <div class="explore-item" style="width: 150px;float: left;">
                         <img src="assets/dist/img/explore-4.jpg">
                         <h3>Global Stories</h3>
                     </div>
@@ -837,39 +843,43 @@
     <section id="navigation">
         <div class="container">
             <div class="row">
-                <div class="first-nav-row">
-                    <a href="#"><img src="assets/dist/img/nav/1.jpg"></a>
-                    <h2>What do you <span>wish to fine?</span></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="second-nav-row">
-                    <a href="#"><img src="assets/dist/img/nav/2.jpg"></a>
-                    <img src="assets/dist/img/nav/3.jpg">
-                    <a href="#"><img src="assets/dist/img/nav/4.jpg"></a>
-                    <a href="#"><img src="assets/dist/img/nav/5.jpg"></a>
-                    <a href="#"><img src="assets/dist/img/nav/6.jpg"></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="third-nav-row">
-                    <a href="#"><img src="assets/dist/img/nav/7.jpg"></a>
-                    <a href="#"><img src="assets/dist/img/nav/8.jpg"></a>
-                    <a href="#"><img src="assets/dist/img/nav/9.jpg"></a>
-                    <a href="#"><img src="assets/dist/img/nav/10.jpg"></a>
-                    <img src="assets/dist/img/nav/3.jpg">
-                    <a href="#"><img src="assets/dist/img/nav/11.jpg"></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="fourth-nav-row">
-                    <a href="#"><img src="assets/dist/img/nav/12.jpg"></a>
-                    <img src="assets/dist/img/nav/3.jpg">
-                    <a href="#"><img src="assets/dist/img/nav/13.jpg"></a>
-                    <img src="assets/dist/img/nav/3.jpg">
-                    <a href="#"><img src="assets/dist/img/nav/14.jpg"></a>
-                    <img src="assets/dist/img/nav/3.jpg">
-                    <a href="#"><img src="assets/dist/img/nav/15.jpg"></a>
+                <div class="offset-md-1 col-md-10">
+                    <div class="row">
+                        <div class="first-nav-row">
+                            <a href="#"><img src="assets/dist/img/nav/1.jpg"></a>
+                            <h2>What do you <span>wish to fine?</span></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="second-nav-row">
+                            <a href="#"><img src="assets/dist/img/nav/2.jpg"></a>
+                            <img src="assets/dist/img/nav/3.jpg">
+                            <a href="#"><img src="assets/dist/img/nav/4.jpg"></a>
+                            <a href="#"><img src="assets/dist/img/nav/5.jpg"></a>
+                            <a href="#"><img src="assets/dist/img/nav/6.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="third-nav-row">
+                            <a href="#"><img src="assets/dist/img/nav/7.jpg"></a>
+                            <a href="#"><img src="assets/dist/img/nav/8.jpg"></a>
+                            <a href="#"><img src="assets/dist/img/nav/9.jpg"></a>
+                            <a href="#"><img src="assets/dist/img/nav/10.jpg"></a>
+                            <img src="assets/dist/img/nav/3.jpg">
+                            <a href="#"><img src="assets/dist/img/nav/11.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="fourth-nav-row">
+                            <a href="#"><img src="assets/dist/img/nav/12.jpg"></a>
+                            <img src="assets/dist/img/nav/3.jpg">
+                            <a href="#"><img src="assets/dist/img/nav/13.jpg"></a>
+                            <img src="assets/dist/img/nav/3.jpg">
+                            <a href="#"><img src="assets/dist/img/nav/14.jpg"></a>
+                            <img src="assets/dist/img/nav/3.jpg">
+                            <a href="#"><img src="assets/dist/img/nav/15.jpg"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1110,7 +1120,7 @@
                         <div class="title">
                             <h1>It's Free!</h1>
                             <span>No Hidden Costs</span>
-                            <a href="#" class="btn">Create a Globolyou Shop</a>
+                            <a href="#" class="btn" data-toggle="modal" data-target="#signUpModal">Create a Globolyou Shop</a>
                         </div>
                         <div class="container">
                             <div class="create-shop-bg"></div>

@@ -3,7 +3,7 @@
 	background-color: #fafaff;
 
 	h4 {
-		@include primary-font(26px);
+		@include primary-font(25px);
 		color: rgb(122, 128, 130);
   		line-height: 1.4;
   		text-align: center;
@@ -17,7 +17,7 @@
 	}
 
 	p {
-		@include primary-font(20px);
+		@include primary-font(18px);
   		color: rgb(129, 146, 151);
   		line-height: 1.5;
   		text-align: center;
@@ -37,7 +37,7 @@
 	background-color: #efefef;
 
 	h1 {
-		@include heading-font(38.317px);
+		@include heading-font(35.317px);
 		color: rgb(122, 128, 130);
 		font-weight: bold;
 		line-height: 0.9;

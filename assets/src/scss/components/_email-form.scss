@@ -1,7 +1,7 @@
 #contact {
 	.title {
 		h1 {
-			@include heading-font(38.317px);
+			@include heading-font(34.317px);
 			background-color: #efefef;
 			color: rgb(122, 128, 130);
 			font-weight: bold;
@@ -17,8 +17,8 @@
 		}
 	}
 	p {
-		padding: 96px 0 68px 0;
-		@include primary-font(20.671px);
+		padding: 68px 0 68px 0;
+		@include primary-font(19.671px);
 		color: rgb(129, 146, 151);
 		line-height: 1.384;
 		text-align: center;

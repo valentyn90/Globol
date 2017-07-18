@@ -23,7 +23,7 @@ Copyright 2017-2018 Hussain Sumrat
 .slider-content h3 {
   margin: 0;
   font-family: "Play";
-  font-size: 26.206px;
+  font-size: 20.206px;
   line-height: 1;
   color: white;
   text-align: center;
@@ -33,7 +33,7 @@ Copyright 2017-2018 Hussain Sumrat
   margin: 0;
   margin-bottom: 40px;
   font-family: "Play";
-  font-size: 52px;
+  font-size: 42px;
   line-height: 2;
   color: white;
   text-align: center;
@@ -60,7 +60,7 @@ Copyright 2017-2018 Hussain Sumrat
   border-right: 1px solid #ebebeb;
 }
 .search-bar .list-icon .fa-list-ul {
-  padding: 16px 20px;
+  padding: 13px 20px;
   font-size: 22px; 
   color: #9d9d9d;
 }
@@ -68,7 +68,7 @@ Copyright 2017-2018 Hussain Sumrat
   border: 0;
 }
 .search-bar .form-control {
-  height: 55px !important; 
+  height: 50px !important; 
   border: 0;
   border-radius: 0;
 }
@@ -137,14 +137,14 @@ div#countries_child {
   text-align: center;
 }
 .down-arrow a {
-  padding: 330px;
+  padding: 310px;
   color: #fff; 
   border: 2px solid #fff;
   border-radius: 50%;
 }
 .down-arrow a i {
   position: relative; 
-  top: -280px;
+  top: -255px;
 }
 @media (max-width: 575px) {
   .down-arrow a {
@@ -214,7 +214,7 @@ div#fashion {
 #explore .title h1 {
   margin: 0; 
   font-family: 'Play', sans-serif;
-  font-size: 38px;
+  font-size: 35px;
   font-weight: 600;
   line-height: 1.8333;
   line-height: 1.29;
@@ -237,7 +237,7 @@ div#fashion {
 #explore .explore-item h3 {
   margin: 0; 
   font-family: 'Play', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.5625;
   line-height: 1;
   color: #8ea2a8;
@@ -250,7 +250,7 @@ div#fashion {
 #short-para h4 {
   margin: 0; 
   font-family: 'Play', sans-serif;
-  font-size: 26px;
+  font-size: 25px;
   font-weight: normal;
   line-height: 1.5625;
   line-height: 1.4;
@@ -264,7 +264,7 @@ div#fashion {
 #short-para p {
   margin-top: 75px;
   font-family: 'Play', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal; 
   line-height: 1.5625;
   line-height: 1.5;
@@ -284,7 +284,7 @@ div#fashion {
 #fun-fact h1 {
   margin: 0 auto; 
   font-family: 'Play', sans-serif;
-  font-size: 38.317px;
+  font-size: 35.317px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
@@ -309,7 +309,7 @@ div#fashion {
   margin: 0;
   margin-bottom: 100px; 
   font-family: 'Play', sans-serif;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
@@ -346,7 +346,7 @@ div#fashion {
 #user-type .contents .business-btn,
   #user-type .contents .non-business-btn {
   font-family: 'Play', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1.5625;
   line-height: .85; 
@@ -403,7 +403,7 @@ div#fashion {
   padding: 15px 25px;
   margin: 0;
   font-family: 'Play', sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
@@ -595,7 +595,7 @@ div#fashion {
 #contact .title h1 {
   padding: 60px 0; 
   font-family: 'Play', sans-serif;
-  font-size: 38.317px;
+  font-size: 34.317px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
@@ -615,9 +615,9 @@ div#fashion {
 }
 
 #contact p {
-  padding: 96px 0 68px 0;
+  padding: 68px 0 68px 0;
   font-family: 'Play', sans-serif;
-  font-size: 20.671px;
+  font-size: 19.671px;
   line-height: 1.5625;
   line-height: 1.384;
   color: #819297;
@@ -676,7 +676,7 @@ div#fashion {
 .modal-title {
   margin: 50px auto 30px auto;
   font-family: 'Play', sans-serif;
-  font-size: 38.317px;
+  font-size: 34.317px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
@@ -697,7 +697,7 @@ div#fashion {
 }
 .modal-body p {
   font-family: 'Play', sans-serif;
-  font-size: 22.671px;
+  font-size: 20.671px;
   line-height: 1.5625;
   line-height: 1.385;
   color: #819297;
@@ -730,14 +730,14 @@ div#fashion {
 .modal-content .explore-item-modal h3 {
   margin: 0; 
   font-family: 'Play', sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.5625;
   line-height: 1;
   color: #8ea2a8;
 }
 
 #nonBusinessModal .modal-footer {
-  margin-top: 115px; 
+  margin: 80px 0; 
   border-top: 0;
 }
 #nonBusinessModal .modal-footer a {
@@ -778,7 +778,7 @@ div#fashion {
 #business-modal-slider h1 {
   padding: 65px 0; 
   font-family: 'Play', sans-serif;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
@@ -823,13 +823,13 @@ div#fashion {
   }
 }
 #business-modal-slider h1 span img {
-  max-height: 40px;
+  max-height: 34px;
 }
 
 #non-business-modal-slider h1 {
   padding: 65px 0; 
   font-family: 'Play', sans-serif;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
@@ -874,14 +874,14 @@ div#fashion {
   }
 }
 #non-business-modal-slider h1 span img {
-  max-height: 40px;
+  max-height: 34px;
 }
 
 #one-more-thing {
   margin-top: 100px;
 }
 #one-more-thing h1 {
-  padding: 65px 0 25px 0;
+  padding: 65px 0 65px 0;
   margin: 0; 
   font-family: 'Play', sans-serif;
   font-size: 47px;
@@ -956,7 +956,7 @@ div#fashion {
   float: right;
   margin-right: 170px;
   font-family: 'Play', sans-serif;
-  font-size: 38.366px;
+  font-size: 34.366px;
   font-weight: 600;
   font-weight: 300; 
   line-height: 1.8333;
@@ -1033,34 +1033,34 @@ option:disabled {
 
 select:first-of-type {
   font-family: "Play"; 
-  font-size: 20px;
+  font-size: 16px;
   color: #8d8d8d;
 }
 
 ::-webkit-input-placeholder {
   font-family: "Play"; 
-  font-size: 20px;
+  font-size: 16px;
   /* Chrome/Opera/Safari */
   color: #8d8d8d;
 }
 
 ::-moz-placeholder {
   font-family: "Play"; 
-  font-size: 20px;
+  font-size: 16px;
   /* Firefox 19+ */
   color: #8d8d8d;
 }
 
 :-ms-input-placeholder {
   font-family: "Play"; 
-  font-size: 20px;
+  font-size: 16px;
   /* IE 10+ */
   color: #8d8d8d;
 }
 
 :-moz-placeholder {
   font-family: "Play"; 
-  font-size: 20px;
+  font-size: 16px;
   /* Firefox 18- */
   color: #8d8d8d;
 }
@@ -1272,7 +1272,7 @@ nav {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
   height: 100%;
 }
 
@@ -1419,7 +1419,7 @@ nav {
 
 .search-bar-scrolling {
   position: fixed;
-  top: 2%;
+  top: 1%;
   left: 27%;
   width: 670px;
 }
@@ -1430,14 +1430,14 @@ nav {
   right: 0;
   left: 0;
   z-index: 1030;
-  height: 88px;
-  padding: 15px;
+  height: 75px;
+  padding: 10px;
   background-color: #fff;
 }
 
 .scrolling-logo {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin-left: 50px;
 }
 
@@ -1641,7 +1641,7 @@ footer .pre-footer .social-link-ch {
 }
 footer .copyright {
   font-family: "Play";
-  font-size: 17.439px;
+  font-size: 16.439px;
   line-height: 4.587;
   color: #afafaf;
   text-align: center;
