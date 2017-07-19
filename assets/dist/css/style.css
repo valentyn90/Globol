@@ -56,26 +56,28 @@ Copyright 2017-2018 Hussain Sumrat
   border-radius: 3px;
 }
 .search-bar .list-icon {
-  background-color: #fff; 
+  background-color: #fff;
+  background-color: rgba(121, 113, 113, .3); 
   border-right: 1px solid #ebebeb;
 }
 .search-bar .list-icon .fa-list-ul {
   padding: 13px 20px;
   font-size: 22px; 
-  color: #9d9d9d;
+  color: #fff;
 }
 .search-bar select.form-control {
   border: 0;
 }
 .search-bar .form-control {
-  height: 50px !important; 
+  height: 50px !important;
+  background-color: rgba(121, 113, 113, .3); 
   border: 0;
   border-radius: 0;
 }
 .search-bar button {
   width: 92px;
-  background-color: #dadada;
-  border-left: 1px solid #dedede; 
+  background-color: #fff;
+  border: 2px solid #dedede; 
   border-radius: 0;
 }
 .search-bar button .fa-search {
@@ -111,7 +113,7 @@ Copyright 2017-2018 Hussain Sumrat
 }
 
 .dd {
-  background: #fff;
+  background-color: rgba(121, 113, 113, .3);
   border: 0;
   border-radius: 0;
 }
@@ -120,6 +122,10 @@ div#countries_child {
   top: 100% !important;
   left: -75%;
   width: 200px;
+}
+
+.dd .arrow {
+  background: url(../../images/msdropdown/skin1/dd_arrow_white.png) no-repeat;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -194,7 +200,7 @@ div#fashion {
   }
   .down-arrow {
     position: absolute;
-    bottom: -725px;
+    bottom: -640px;
     width: 100%;
     text-align: center;
   }
@@ -214,7 +220,7 @@ div#fashion {
 #explore .title h1 {
   margin: 0; 
   font-family: 'Play', sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1.8333;
   line-height: 1.29;
@@ -237,7 +243,7 @@ div#fashion {
 #explore .explore-item h3 {
   margin: 0; 
   font-family: 'Play', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.5625;
   line-height: 1;
   color: #8ea2a8;
@@ -676,7 +682,7 @@ div#fashion {
 .modal-title {
   margin: 50px auto 30px auto;
   font-family: 'Play', sans-serif;
-  font-size: 34.317px;
+  font-size: 30.317px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
@@ -706,6 +712,34 @@ div#fashion {
 @media (max-width: 575px) {
   .modal-body p {
     font-size: 18px;
+  }
+}
+.modal-body .item-1 {
+  float: right; 
+  width: 110px;
+}
+@media (max-width: 575px) {
+  .modal-body .item-1 {
+    float: none;
+    margin: 0 auto;
+  }
+}
+.modal-body .item-2 {
+  width: 110px;
+  margin: 0 auto;
+}
+.modal-body .item-3 {
+  width: 110px;
+  margin: 0 auto;
+}
+.modal-body .item-4 {
+  float: left; 
+  width: 110px;
+}
+@media (max-width: 575px) {
+  .modal-body .item-4 {
+    float: none;
+    margin: 0 auto;
   }
 }
 
@@ -824,6 +858,7 @@ div#fashion {
 }
 #business-modal-slider h1 span img {
   max-height: 34px;
+  margin-top: 9px;
 }
 
 #non-business-modal-slider h1 {
@@ -875,16 +910,17 @@ div#fashion {
 }
 #non-business-modal-slider h1 span img {
   max-height: 34px;
+  margin-top: 9px;
 }
 
 #one-more-thing {
   margin-top: 100px;
 }
 #one-more-thing h1 {
-  padding: 65px 0 65px 0;
+  padding: 50px 0 50px 0;
   margin: 0; 
   font-family: 'Play', sans-serif;
-  font-size: 47px;
+  font-size: 38px;
   font-weight: 600;
   font-weight: bold;
   line-height: 1.8333;
@@ -915,12 +951,12 @@ div#fashion {
 }
 #one-more-thing .title .btn {
   display: block;
-  max-width: 365px;
+  max-width: 345px;
   margin: 0 auto;
   margin-top: 50px;
   font-family: "Play";
   font-size: 26px;
-  line-height: 1.1;
+  line-height: 1.5;
   color: #7a8082;
   text-align: center;
   border: 2px solid #7a8082;
@@ -987,8 +1023,8 @@ div#fashion {
   #navigation .second-nav-row a img,
   #navigation .third-nav-row a img,
   #navigation .fourth-nav-row a img {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 3px;
   -webkit-box-shadow: inset 0 0 0 10px #dddee0, inset 0 0 0 12px #e0dcdc, 0 6px 20px #e0dbdb;
           box-shadow: inset 0 0 0 10px #dddee0, inset 0 0 0 12px #e0dcdc, 0 6px 20px #e0dbdb;
@@ -1028,13 +1064,13 @@ body {
 option:disabled {
   font-family: "Play"; 
   font-size: 20px;
-  color: #8d8d8d;
+  color: #fff;
 }
 
 select:first-of-type {
   font-family: "Play"; 
   font-size: 16px;
-  color: #8d8d8d;
+  color: #fff;
 }
 
 ::-webkit-input-placeholder {
@@ -1063,6 +1099,22 @@ select:first-of-type {
   font-size: 16px;
   /* Firefox 18- */
   color: #8d8d8d;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input[type="search"]::-moz-placeholder {
+  color: #fff;
+}
+
+input[type="search"]:-ms-input-placeholder {
+  color: #fff;
+}
+
+input[type="search"]:-moz-placeholder {
+  color: #fff;
 }
 
 /*
@@ -1290,10 +1342,13 @@ nav {
 .nav-item {
   padding: 0 68px;
   font-family: 'Play', sans-serif;
-  font-size: 24.333px;
+  font-size: 20.333px;
   line-height: 1.5625;
   color: #7f8486;
   text-transform: capitalize;
+}
+.nav-item:hover {
+  text-decoration: none;
 }
 
 .scrolling-nav {
@@ -1323,7 +1378,7 @@ nav {
   display: table;
   width: 100%;
   height: calc(100% /4);
-  background: rgba(255, 255, 255, .15);
+  background: white;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
   -webkit-transition: all .3s ease .1s;
        -o-transition: all .3s ease .1s;

@@ -6,7 +6,7 @@
 		text-align: center;
 
 		h1 {
-			@include heading-font(35px);
+			@include heading-font(30px);
 			color: rgb(122, 128, 130);
 			line-height: 1.29;
 			margin: 0;
@@ -25,10 +25,13 @@
 		}
 
 		h3 {
-			@include primary-font(20px);
+			@include primary-font(17px);
 			color: rgb(142, 162, 168);
   			line-height: 1;
   			margin: 0;
 		}
 	}
 }
+
+
+

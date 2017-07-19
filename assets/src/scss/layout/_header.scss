@@ -22,9 +22,13 @@ nav {
 }
 .nav-item {
 	padding: 0 68px;
-	@include primary-font(24.333px);
+	@include primary-font(20.333px);
 	color: rgb(127, 132, 134);
 	text-transform: capitalize;
+
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 
@@ -50,7 +54,7 @@ nav {
 	  width: 100%;
 	  height: calc(100% /4);
 	  border-bottom: 1px solid rgba(255,255,255,0.3);
-	  background: rgba(255,255,255,0.15);
+	  background: rgba(255,255,255,1);
 	   perspective: 0px;
 	          transform: rotateX(-90deg) scale(0.5);
 	  -webkit-transition: all 0.3s ease 0.1s;

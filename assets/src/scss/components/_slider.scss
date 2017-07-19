@@ -43,10 +43,11 @@
 	.list-icon {
 		border-right: 1px solid rgb(235, 235, 235);
 		background-color: #fff;
+		background-color: rgba(121, 113, 113, 0.3);
 
 		.fa-list-ul {
 			padding: 13px 20px;
-			color: #9d9d9d;
+			color: #fff;
 			font-size: 22px;
 		}
 	}
@@ -59,13 +60,14 @@
 		border: 0;
 		border-radius: 0;
 		height: 50px !important;
+		background-color: rgba(121, 113, 113, 0.3);
 	}
 
 	button {
 		width: 92px;
 		border-radius: 0;
-		background-color: #dadada;
-		border-left: 1px solid #dedede;
+		background-color: #fff;
+		border: 2px solid #dedede;
 
 		.fa-search {
 			color: #afafaf;
@@ -95,7 +97,7 @@
 	border: 0;
 }
 .dd {
-    background: #fff;
+    background-color: rgba(121, 113, 113, 0.3);;
     border: 0;
     border-radius: 0;
 }
@@ -103,6 +105,9 @@ div#countries_child {
     top: 100% !important;
     left: -75%;
     width: 200px;
+}
+.dd .arrow {
+    background: url(../../images/msdropdown/skin1/dd_arrow_white.png) no-repeat;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -167,7 +172,7 @@ div#fashion {
 	}
 	.down-arrow {
 		position: absolute;
-	    bottom: -725px;
+	    bottom: -640px;
 	    width: 100%;
 	    text-align: center;
 

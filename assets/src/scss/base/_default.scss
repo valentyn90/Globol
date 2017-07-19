@@ -8,12 +8,12 @@ body {
 }
 
 option:disabled {
-    color: rgb(141, 141, 141);
+    color: #fff;
   	font-size: 20px;
   	font-family: "Play";
 }
 select:first-of-type {
-    color: rgb(141, 141, 141);
+    color: #fff;
   	font-size: 16px;
   	font-family: "Play";
 }
@@ -37,4 +37,17 @@ select:first-of-type {
   color: rgb(141, 141, 141);
   font-size: 16px;
   font-family: "Play";
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    color: #fff;
+}
+input[type="search"]::-moz-placeholder {
+    color: #fff;
+}
+input[type="search"]:-ms-input-placeholder {
+    color: #fff;
+}
+input[type="search"]:-moz-placeholder {
+    color: #fff;
 }

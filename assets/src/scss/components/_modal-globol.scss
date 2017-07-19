@@ -8,7 +8,7 @@
 	}
 }
 .modal-title {
-	@include heading-font(34.317px);
+	@include heading-font(30.317px);
 	margin: 50px auto 30px auto;
 	color: rgb(122, 128, 130);
     font-weight: bold;
@@ -33,6 +33,34 @@
             font-size: 18px;
         }
 	}
+    .item-1 {
+        width: 110px;
+        float: right;
+
+        // Below 34em (544px)
+        @include media("<sm") {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+    .item-2 {
+        width: 110px;
+        margin: 0 auto;
+    }
+    .item-3 {
+        width: 110px;
+        margin: 0 auto;
+    }
+    .item-4 {
+        width: 110px;
+        float: left;
+
+        // Below 34em (544px)
+        @include media("<sm") {
+            float: none;
+            margin: 0 auto;
+        }
+    }
 }
 .modal-dialog {
 	max-width: 97%;
@@ -130,6 +158,7 @@
 
             img {
                 max-height: 34px;
+                margin-top: 9px;
             }
         }
     }
@@ -173,6 +202,7 @@
 
             img {
                 max-height: 34px;
+                margin-top: 9px;
             }
         }
 	}
@@ -183,13 +213,13 @@
     margin-top: 100px;
 
 	h1 {
-		@include heading-font(47px);
+		@include heading-font(38px);
 		color: rgb(122, 128, 130);
 		font-weight: bold;
 		line-height: 1;
 		text-align: center;
 		background-color: #efefef;
-		padding: 65px 0 65px 0;
+		padding: 50px 0 50px 0;
         margin: 0;
 
         // Below 34em (544px)
@@ -214,9 +244,9 @@
             font-size: 26px;
             font-family: "Play";
             color: rgb(122, 128, 130);
-            line-height: 1.1;
+            line-height: 1.5;
             text-align: center;
-            max-width: 365px;
+            max-width: 345px;
             margin: 0 auto;
             margin-top: 50px;
             border: 2px solid #7a8082;
